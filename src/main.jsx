@@ -125,7 +125,7 @@ const router = createBrowserRouter([
       {
         path: '/viewDetails/:id',
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
-        loader: ({params}) => fetch(`https://tourist-spot-server-rho.vercel.app/spot/${params.id}`)
+        loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
       },
       {
         path: '/countries',

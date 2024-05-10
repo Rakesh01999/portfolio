@@ -76,7 +76,7 @@ const CategoryBook = ({ book }) => {
                         </p>
 
                         <Link to={`/viewDetails/${book._id}`}>
-                            {/* <button className='btn w-[150px] h-[] bg-blue-700 text-white text-[18px]'>View Details</button> */}
+                            <button className='btn w-[150px] h-[] bg-blue-700 text-white text-[18px]'>View Details</button>
                         </Link>
 
                         {/* Update */}
