@@ -1,7 +1,7 @@
 import React from 'react';
 import { Zoom } from 'react-awesome-reveal';
 import { FaFlag } from 'react-icons/fa6';
-import { MdDescription } from 'react-icons/md';
+import { MdCategory, MdDescription } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const Category = ({ category }) => {
@@ -25,7 +25,7 @@ const Category = ({ category }) => {
                                 {/* <h2 className="card-title text-xl lg:text-2xl text-blue-500 mx-auto font-bold my-4">{spotName}</h2> */}
                                 <div className="flex gap-2 items-center text-xl text-green-800 md:text-2xl">
                                     {/* <IoPricetags className="text-green-200" /> */}
-                                    <FaFlag className="text-center" />
+                                    <MdCategory className="text-center" />
                                     <p className='text-center'>{categoryName}</p>
                                 </div>
                                 <div className="border-b-2 my-4"></div>
