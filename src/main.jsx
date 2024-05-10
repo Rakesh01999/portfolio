@@ -35,6 +35,7 @@ import AddBook from './components/AddBook/AddBook.jsx';
 import UpdateBook from './components/UpdateBook/UpdateBook.jsx';
 import AddCategory from './components/AddCategory/AddCategory.jsx';
 import Categories from './components/Categories/Categories.jsx';
+import CategoryBooks from './components/CategoryBooks/CategoryBooks.jsx';
 
 register();
 
@@ -148,6 +149,11 @@ const router = createBrowserRouter([
         path: '/countrySpots/:id',
         element: <CountrySpots></CountrySpots>,
         loader: ({params}) => fetch(`https://tourist-spot-server-rho.vercel.app/country/${params.id}`)
+      },
+      {
+        path: '/categoryBooks/:id',
+        element: <CategoryBooks></CategoryBooks>,
+        loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
       }
     ]
   },
