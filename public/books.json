@@ -1,0 +1,422 @@
+[
+    {
+        "image": "https://i.postimg.cc/NMD0LKfd/The-Great-Gatsby.jpg",
+        "name": "The Great Gatsby",
+        "quantity": 10,
+        "author": "F. Scott Fitzgerald",
+        "category": "Novel",
+        "description": "A novel depicting the decadence and excess of the Jazz Age in America.",
+        "rating": 4,
+        "contents": "The story follows the mysterious Jay Gatsby and his pursuit of the American Dream."
+    },
+    {
+        "image": "https://i.postimg.cc/W14WDCpj/To-Kill-a-Mockingbird1.jpg",
+        "name": "To Kill a Mockingbird",
+        "quantity": 8,
+        "author": "Harper Lee",
+        "category": "Novel",
+        "description": "A novel set in the American South during the 1930s, addressing issues of racial injustice.",
+        "rating": 5,
+        "contents": "The story follows young Scout Finch and her father, lawyer Atticus Finch, as he defends a black man accused of raping a white woman."
+    },
+    {
+        "image": "https://i.postimg.cc/1tY5QLzt/1984.jpg",
+        "name": "1984",
+        "quantity": 9,
+        "author": "George Orwell",
+        "category": "Novel",
+        "description": "A dystopian novel depicting a totalitarian regime where individuality and freedom are suppressed.",
+        "rating": 5,
+        "contents": "Winston Smith rebels against the oppressive government, leading to a harrowing journey of rebellion and self-discovery."
+    },
+    {
+        "image": "https://i.postimg.cc/HLNkGqnL/The-Catcher-in-the-Rye.jpg",
+        "name": "The Catcher in the Rye",
+        "quantity": 5,
+        "author": "J.D. Salinger",
+        "category": "Novel",
+        "description": "A coming-of-age novel following Holden Caulfield as he navigates the complexities of adolescence and society.",
+        "rating": 4,
+        "contents": "Holden grapples with alienation, identity, and the phoniness of the adult world, seeking authenticity in a world of superficiality."
+    },
+    {
+        "image": "https://example.com/book4.jpg",
+        "name": "Pride and Prejudice",
+        "quantity": 6,
+        "author": "Jane Austen",
+        "category": "Novel",
+        "description": "A romantic novel set in Georgian England, exploring themes of love, class, and societal expectations.",
+        "rating": 4,
+        "contents": "The story follows the spirited Elizabeth Bennet and the proud Mr. Darcy as they navigate misunderstandings and societal norms."
+    },
+    {
+        "image": "https://example.com/book5.jpg",
+        "name": "Crime and Punishment",
+        "quantity": 8,
+        "author": "Fyodor Dostoevsky",
+        "category": "Novel",
+        "description": "A psychological novel exploring the moral dilemmas faced by a young student after committing a crime.",
+        "rating": 5,
+        "contents": "Raskolnikov grapples with guilt, redemption, and the nature of justice, leading to a profound exploration of human nature."
+    },
+    {
+        "image": "https://example.com/book3.jpg",
+        "name": "1984",
+        "quantity": 12,
+        "author": "George Orwell",
+        "category": "Dystopian",
+        "description": "A dystopian novel set in a totalitarian society, exploring themes of surveillance and government control.",
+        "rating": 4,
+        "contents": "The protagonist, Winston Smith, rebels against the oppressive regime of Big Brother."
+    },
+    {
+        "image": "https://example.com/book4.jpg",
+        "name": "Pride and Prejudice",
+        "quantity": 6,
+        "author": "Jane Austen",
+        "category": "Classic",
+        "description": "A romantic novel set in early 19th-century England, focusing on themes of marriage and social status.",
+        "rating": 5,
+        "contents": "The story follows the independent-minded Elizabeth Bennet as she navigates the challenges of love and societal expectations."
+    },
+    {
+        "image": "https://example.com/book5.jpg",
+        "name": "The Catcher in the Rye",
+        "quantity": 9,
+        "author": "J.D. Salinger",
+        "category": "Coming-of-age",
+        "description": "A novel narrated by a troubled teenager, Holden Caulfield, who grapples with alienation and the transition to adulthood.",
+        "rating": 4,
+        "contents": "Holden embarks on a journey of self-discovery while navigating the complexities of adolescence."
+    },
+    {
+        "image": "https://example.com/book6.jpg",
+        "name": "Harry Potter and the Philosopher's Stone",
+        "quantity": 15,
+        "author": "J.K. Rowling",
+        "category": "Fantasy",
+        "description": "The first book in the Harry Potter series, following the young wizard's journey at Hogwarts School of Witchcraft and Wizardry.",
+        "rating": 5,
+        "contents": "Harry discovers his magical heritage and confronts the dark wizard Voldemort."
+    },
+    {
+        "image": "https://example.com/book7.jpg",
+        "name": "The Hobbit",
+        "quantity": 7,
+        "author": "J.R.R. Tolkien",
+        "category": "Fantasy",
+        "description": "A fantasy novel set in Middle-earth, chronicling the adventures of Bilbo Baggins as he embarks on a quest to reclaim treasure guarded by a dragon.",
+        "rating": 4,
+        "contents": "Bilbo encounters trolls, goblins, and elves on his journey, ultimately facing the dragon Smaug."
+    },
+    {
+        "image": "https://example.com/book8.jpg",
+        "name": "The Lord of the Rings",
+        "quantity": 11,
+        "author": "J.R.R. Tolkien",
+        "category": "Fantasy",
+        "description": "A high-fantasy epic set in Middle-earth, following the quest to destroy the One Ring and defeat the dark lord Sauron.",
+        "rating": 5,
+        "contents": "Frodo Baggins and his companions undertake a perilous journey to Mount Doom, encountering allies and adversaries along the way."
+    },
+    {
+        "image": "https://example.com/book9.jpg",
+        "name": "Moby-Dick",
+        "quantity": 5,
+        "author": "Herman Melville",
+        "category": "Adventure",
+        "description": "A novel detailing the obsessive quest of Captain Ahab for revenge against the white whale Moby Dick.",
+        "rating": 4,
+        "contents": "The crew of the Pequod faces the dangers of the sea and the enigmatic Captain Ahab's descent into madness."
+    },
+    {
+        "image": "https://example.com/book10.jpg",
+        "name": "The Picture of Dorian Gray",
+        "quantity": 8,
+        "author": "Oscar Wilde",
+        "category": "Gothic",
+        "description": "A Gothic novel exploring themes of vanity, hedonism, and the pursuit of beauty.",
+        "rating": 4,
+        "contents": "The protagonist, Dorian Gray, remains youthful while his portrait ages, leading to moral and psychological decay."
+    },
+    {
+        "image": "https://example.com/book11.jpg",
+        "name": "The Adventures of Huckleberry Finn",
+        "quantity": 7,
+        "author": "Mark Twain",
+        "category": "Adventure",
+        "description": "A novel depicting the adventures of a young boy, Huck Finn, as he navigates the Mississippi River.",
+        "rating": 4,
+        "contents": "Huck escapes his abusive father and travels down the river with the escaped slave Jim, encountering various characters and moral dilemmas."
+    },
+    {
+        "image": "https://example.com/book12.jpg",
+        "name": "Crime and Punishment",
+        "quantity": 6,
+        "author": "Fyodor Dostoevsky",
+        "category": "Psychological",
+        "description": "A psychological novel exploring themes of guilt, morality, and redemption.",
+        "rating": 5,
+        "contents": "The protagonist, Raskolnikov, grapples with the consequences of committing a murder and seeks redemption through suffering."
+    },
+    {
+        "image": "https://example.com/book13.jpg",
+        "name": "Anna Karenina",
+        "quantity": 7,
+        "author": "Leo Tolstoy",
+        "category": "Classic",
+        "description": "A classic novel depicting the tragic love affair between Anna Karenina and Count Vronsky.",
+        "rating": 4,
+        "contents": "The novel explores themes of love, marriage, and society, set against the backdrop of 19th-century Russia."
+    },
+    {
+        "image": "https://example.com/book14.jpg",
+        "name": "The Odyssey",
+        "quantity": 8,
+        "author": "Homer",
+        "category": "Epic",
+        "description": "An epic poem recounting the journey of the Greek hero Odysseus as he attempts to return home after the Trojan War.",
+        "rating": 5,
+        "contents": "Odysseus faces numerous challenges, including encounters with mythical creatures and the wrath of the gods, on his journey home to Ithaca."
+    },
+    {
+        "image": "https://example.com/book15.jpg",
+        "name": "War and Peace",
+        "quantity": 9,
+        "author": "Leo Tolstoy",
+        "category": "Historical Fiction",
+        "description": "A historical novel set against the backdrop of the Napoleonic Wars, depicting the lives of Russian aristocrats.",
+        "rating": 4,
+        "contents": "The novel follows several interconnected families as they navigate love, war, and social change in early 19th-century Russia."
+    },
+    {
+        "image": "https://example.com/book16.jpg",
+        "name": "The Alchemist",
+        "quantity": 10,
+        "author": "Paulo Coelho",
+        "category": "Fiction",
+        "description": "A philosophical novel following the journey of a young shepherd named Santiago as he seeks his Personal Legend.",
+        "rating": 4,
+        "contents": "Santiago embarks on a quest to discover his purpose in life, encountering mentors, challenges, and revelations along the way."
+    },
+    {
+        "image": "https://example.com/book17.jpg",
+        "name": "The Kite Runner",
+        "quantity": 8,
+        "author": "Khaled Hosseini",
+        "category": "Drama",
+        "description": "A novel depicting the friendship between two boys, Amir and Hassan, set against the backdrop of Afghanistan's turbulent history.",
+        "rating": 5,
+        "contents": "Amir's guilt over betraying Hassan haunts him throughout his life, leading him on a journey of redemption and forgiveness."
+    },
+    {
+        "image": "https://example.com/book18.jpg",
+        "name": "The Hunger Games",
+        "quantity": 12,
+        "author": "Suzanne Collins",
+        "category": "Young Adult",
+        "description": "A dystopian novel set in a future where children are forced to participate in a televised fight to the death.",
+        "rating": 4,
+        "contents": "Katniss Everdeen volunteers to take her sister's place in the Hunger Games, sparking a rebellion against the oppressive Capitol."
+    },
+    {
+        "image": "https://example.com/book19.jpg",
+        "name": "The Girl with the Dragon Tattoo",
+        "quantity": 6,
+        "author": "Stieg Larsson",
+        "category": "Mystery",
+        "description": "A thriller novel featuring journalist Mikael Blomkvist and hacker Lisbeth Salander as they investigate a decades-old disappearance.",
+        "rating": 4,
+        "contents": "The investigation uncovers dark secrets and corruption within Sweden's elite, leading to a gripping tale of intrigue and suspense."
+    },
+    {
+        "image": "https://i.postimg.cc/y86Z1Fgg/The-Da-Vinci-Code.jpg",
+        "name": "The Da Vinci Code",
+        "quantity": 7,
+        "author": "Dan Brown",
+        "category": "Thriller",
+        "description": "A gripping thriller that follows symbologist Robert Langdon as he uncovers a conspiracy that spans centuries.",
+        "rating": 4,
+        "contents": "Langdon races against time to solve cryptic puzzles and uncover hidden secrets, leading to a thrilling adventure."
+    },
+    {
+        "image": "https://i.postimg.cc/DZ1ZdZ43/The-Shining.jpg",
+        "name": "The Shining",
+        "quantity": 5,
+        "author": "Stephen King",
+        "category": "Thriller",
+        "description": "A horror novel set in an isolated hotel, where a family grapples with supernatural forces and their own inner demons.",
+        "rating": 5,
+        "contents": "Jack Torrance becomes the winter caretaker of the Overlook Hotel, but as the hotel's dark secrets are revealed, madness descends."
+    },
+    {
+        "image": "https://i.postimg.cc/G2RrRjt6/Gone-Girl.jpg",
+        "name": "Gone Girl",
+        "quantity": 9,
+        "author": "Gillian Flynn",
+        "category": "Thriller",
+        "description": "A psychological thriller about the disappearance of Amy Dunne and the subsequent media frenzy surrounding her husband Nick.",
+        "rating": 5,
+        "contents": "As the investigation unfolds, dark secrets and twisted motives come to light, blurring the lines between truth and deception."
+    },
+    {
+        "image": "https://i.postimg.cc/J4f2SzG2/The-Girl-with-the-Dragon-Tattoo.jpg",
+        "name": "The Girl with the Dragon Tattoo",
+        "quantity": 6,
+        "author": "Stieg Larsson",
+        "category": "Thriller",
+        "description": "A thriller novel featuring journalist Mikael Blomkvist and hacker Lisbeth Salander as they investigate a decades-old disappearance.",
+        "rating": 4,
+        "contents": "The investigation uncovers dark secrets and corruption within Sweden's elite, leading to a gripping tale of intrigue and suspense."
+    },
+    {
+        "image": "https://i.postimg.cc/QCbn7QX9/The-Origins-of-Civilization.jpg",
+        "name": "The Origins of Civilization",
+        "quantity": 10,
+        "author": "James Smith",
+        "category": "History",
+        "description": "A comprehensive exploration of early human societies and the development of civilization from ancient times to the present.",
+        "rating": 4,
+        "contents": "This book delves into archaeological discoveries, cultural practices, and societal advancements that shaped human history."
+    },
+    {
+        "image": "https://i.postimg.cc/DzrQm2fm/World-War-II-A-Global-Perspective.jpg",
+        "name": "World War II: A Global Perspective",
+        "quantity": 8,
+        "author": "Emma Johnson",
+        "category": "History",
+        "description": "An in-depth analysis of World War II, examining its causes, major battles, key figures, and lasting impact on the world.",
+        "rating": 5,
+        "contents": "Through firsthand accounts, archival photos, and expert analysis, readers gain insights into the complex dynamics of the war."
+    },
+    {
+        "image": "https://i.postimg.cc/BnTZhJj5/The-Renaissance-A-Cultural-Revolution.jpg",
+        "name": "The Renaissance: A Cultural Revolution",
+        "quantity": 12,
+        "author": "Michael Brown",
+        "category": "History",
+        "description": "Explores the transformative period of the Renaissance, highlighting its artistic, intellectual, and scientific achievements.",
+        "rating": 3,
+        "contents": "From the works of Leonardo da Vinci to the theories of Copernicus, this book celebrates the era's creativity and innovation."
+    },
+    {
+        "image": "https://i.postimg.cc/T3fhvyMN/The-American-Civil-War-A-Nation-Divided.jpg",
+        "name": "The American Civil War",
+        "quantity": 6,
+        "author": "Sarah White",
+        "category": "History",
+        "description": "Chronicles the American Civil War, its underlying causes, major battles, and the profound impact on American society.",
+        "rating": 5,
+        "contents": "Through gripping narratives and historical analysis, this book vividly portrays the struggles and triumphs of this pivotal period."
+    },
+    {
+        "image": "https://i.postimg.cc/fyRbnhRV/Ancient-Empires-Rise-and-Fall.jpg",
+        "name": "Ancient Empires: Rise and Fall",
+        "quantity": 9,
+        "author": "David Clark",
+        "category": "History",
+        "description": "Traces the rise and fall of ancient empires, from Mesopotamia and Egypt to Rome and Byzantium, exploring their legacies.",
+        "rating": 4,
+        "contents": "Through maps, timelines, and engaging narratives, readers embark on a journey through the annals of ancient history."
+    },
+    {
+        "image": "https://i.postimg.cc/Pq1bN1zm/Romeo-and-Juliet.jpg",
+        "name": "Romeo and Juliet",
+        "quantity": 15,
+        "author": "William Shakespeare",
+        "category": "Drama",
+        "description": "A timeless tragedy of two young lovers from feuding families, whose passion ignites a chain of events leading to tragedy.",
+        "rating": 5,
+        "contents": "Shakespeare's poetic language and unforgettable characters make this play a masterpiece of dramatic literature."
+    },
+    {
+        "image": "https://i.postimg.cc/PqHp39Yw/Death-Of-ASalesman.jpg",
+        "name": "Death of a Salesman",
+        "quantity": 10,
+        "author": "Arthur Miller",
+        "category": "Drama",
+        "description": "Examines the disillusionment of an aging salesman and his family's struggle with the American Dream.",
+        "rating": 1,
+        "contents": "Miller's exploration of identity, success, and morality resonates with audiences, making it a classic of modern theater."
+    },
+    {
+        "image": "https://i.postimg.cc/nhWPyDNq/A-Streetcar-Named-Desire.jpg",
+        "name": "A Streetcar Named Desire",
+        "quantity": 12,
+        "author": "Tennessee Williams",
+        "category": "Drama",
+        "description": "Set in New Orleans, this play follows the tragic downfall of Blanche DuBois as she confronts her past and desires.",
+        "rating": 5,
+        "contents": "Williams' powerful dialogue and vivid characters illuminate themes of desire, illusion, and decay in this iconic drama."
+    },
+    {
+        "image": "https://i.postimg.cc/nhWPyDNq/A-Streetcar-Named-Desire.jpg",
+        "name": "The Crucible",
+        "quantity": 8,
+        "author": "Arthur Miller",
+        "category": "Drama",
+        "description": "Allegorical tale of the Salem witch trials, exploring themes of mass hysteria, fear, and the power of accusation.",
+        "rating": 4,
+        "contents": "Miller's searing indictment of McCarthyism and intolerance remains relevant in its examination of social and political dynamics."
+    },
+    {
+        "image": "https://i.postimg.cc/nLHXtX7c/Hamlet.jpg",
+        "name": "Hamlet",
+        "quantity": 9,
+        "author": "William Shakespeare",
+        "category": "Drama",
+        "description": "Tragic tale of Prince Hamlet's quest for revenge against his uncle Claudius, who has murdered Hamlet's father.",
+        "rating": 5,
+        "contents": "Shakespeare's exploration of revenge, madness, and moral ambiguity makes 'Hamlet' one of his most enduring works."
+    },
+    {
+        "image": "https://i.postimg.cc/x1PKHD38/Dune.jpg",
+        "name": "Dune",
+        "quantity": 20,
+        "author": "Frank Herbert",
+        "category": "Sci-Fi",
+        "description": "Epic saga set in a distant future where noble houses vie for control of the desert planet Arrakis, the only source of the valuable spice melange.",
+        "rating": 5,
+        "contents": "Herbert's richly imagined world, complex characters, and themes of politics, religion, and ecology have captivated readers for decades."
+    },
+    {
+        "image": "image_url_12",
+        "name": "1984",
+        "quantity": 18,
+        "author": "George Orwell",
+        "category": "Sci-Fi",
+        "description": "Orwell's dystopian masterpiece portrays a totalitarian society where individuality is suppressed, and dissent is punished.",
+        "rating": 4,
+        "contents": "Through the eyes of protagonist Winston Smith, readers confront themes of surveillance, propaganda, and the erosion of freedom."
+    },
+    {
+        "image": "https://i.postimg.cc/wMJNjSB6/Foundation.jpg",
+        "name": "Foundation",
+        "quantity": 15,
+        "author": "Isaac Asimov",
+        "category": "Sci-Fi",
+        "description": "Asimov's groundbreaking series follows mathematician Hari Seldon's efforts to preserve civilization in the face of collapse.",
+        "rating": 5,
+        "contents": "With its visionary concepts of psychohistory and galactic empires, 'Foundation' has influenced generations of science fiction writers."
+    },
+    {
+        "image": "https://i.postimg.cc/1Xxg2Jrb/Neuromancer.jpg",
+        "name": "Neuromancer",
+        "quantity": 12,
+        "author": "William Gibson",
+        "category": "Sci-Fi",
+        "description": "Cyberpunk classic that explores the intersection of technology, identity, and corporate power in a dystopian future.",
+        "rating": 4,
+        "contents": "Gibson's gritty prose and immersive world-building paved the way for a new wave of speculative fiction, shaping the cyberpunk genre."
+    },
+    {
+        "image": "https://i.postimg.cc/dVXJ5DBx/The-Hitchhiker-s-Guide-to-the-Galaxy.jpg",
+        "name": "The Hitchhiker's Guide to the Galaxy",
+        "quantity": 14,
+        "author": "Douglas Adams",
+        "category": "Sci-Fi",
+        "description": "Satirical science fiction series follows the misadventures of an unwitting human, Arthur Dent, as he travels through space with his alien friend Ford Prefect.",
+        "rating": 5,
+        "contents": "Adams' witty humor and imaginative universe make 'The Hitchhiker's Guide to the Galaxy' a beloved classic among fans of the genre."
+    }
+]
