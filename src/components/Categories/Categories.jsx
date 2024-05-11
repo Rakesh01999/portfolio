@@ -17,7 +17,7 @@ const Categories = () => {
         <div>
 
             <Fade>
-                <h2 className="hover:text-lime-600 text-xl text-center md:text-[40px] text-orange-500 font-bold mb-10"> Categories  </h2>
+                <h2 className="hover:text-lime-600 text-xl text-center md:text-[40px] text-cyan-400 font-bold mb-10"> Categories  </h2>
                 <div className='hover:text-lime-400 max-w-[370px] md:max-w-[540px]  lg:max-w-[1540px] mx-auto px-4 py-2 rounded-3xl flex flex-col md:flex-row items-center justify-center mb-10'>
                     <h1 className='text-xl text-center md:text-[25px]  font-bold mb-10'>
                         {/* to find the best Tourist Place */}
@@ -32,7 +32,7 @@ const Categories = () => {
                                 delaySpeed={1000}
                                 // words={['Hello', 'World', 'React']}
                                 // words={[' your cards', ' Desired', ' cards']}
-                                words={[' your Desired book category card', ' . . . ']}
+                                words={[' your favourite book category card', ' . . . ']}
                             />
                         </span>
                     </h1>

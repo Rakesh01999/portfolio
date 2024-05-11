@@ -48,7 +48,7 @@ const Header = () => {
         {/* <li><NavLink to="/addSpot">Add Tourists Spot </NavLink></li> */}
         {/* <li><NavLink to="/allSpot">All Tourists Spot </NavLink></li> */}
         <li><NavLink to="/addBook">Add Book </NavLink></li>
-        <li><NavLink to="/allBook">All Book </NavLink></li>
+        <li><NavLink to="/allBook">All Books </NavLink></li>
         <li><NavLink to="/myList">My List </NavLink></li>
         <li>
             {/* theme controller ---------- */}

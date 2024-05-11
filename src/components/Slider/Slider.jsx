@@ -18,126 +18,30 @@ const Slider = () => {
     return (
         <div>
 
-            {/* <Swiper
+            <Swiper
                 spaceBetween={50}
                 slidesPerView={3}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
-                <SwiperSlide><span><img src={s1} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s2} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s3} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s4} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s5} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s6} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s7} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s9} alt="" /></span></SwiperSlide>
-                <SwiperSlide><span><img src={s10} alt="" /></span></SwiperSlide>
+                <SwiperSlide><span><img src="https://i.postimg.cc/XNxPdTqX/book-library.jpg" alt="" /></span></SwiperSlide>
+                {/* <SwiperSlide><span><img src="https://i.postimg.cc/G2dMsQ1k/janko-ferlic-sf-L-QOnmy00-unsplash.jpg" alt="" /></span></SwiperSlide> */}
+                <SwiperSlide><span><img src="https://i.postimg.cc/Jnxp3k1S/846-140823862-tiny.jpg" alt="" /></span></SwiperSlide>
+                <SwiperSlide><span><img src="https://i.postimg.cc/J7TTGZYk/book-library-with-open-textbook-2.jpg" alt="" /></span></SwiperSlide>
+                <SwiperSlide><span><img src="https://i.postimg.cc/6qSLzVFb/wallpaperflare-com-wallpaper.jpg" alt="" /></span></SwiperSlide>
+                <SwiperSlide><span><img src="https://i.postimg.cc/pXps8r31/book-library-with-open-textbook.jpg" alt="" /></span></SwiperSlide>
+                <SwiperSlide><span><img src="https://i.postimg.cc/fLzKbRxC/wallpaperflare-com-wallpaper-1.jpg" alt="" /></span></SwiperSlide>
+                {/* <SwiperSlide><span><img src="https://i.postimg.cc/xjFj9J76/Dune.jpg" alt="" /></span></SwiperSlide> */}
+                {/* <SwiperSlide><span><img src="https://i.postimg.cc/904hDbSJ/Neuromancer.jpg" alt="" /></span></SwiperSlide> */}
+                {/* <SwiperSlide><span><img src="https://i.postimg.cc/dtyFvWG0/The-Girl-with-the-Dragon-Tattoo.jpg" alt="" /></span></SwiperSlide> */}
                 ...
-            </Swiper> */}
+            </Swiper>
+
 
             {/* <div className='carousel max-w-[370px] md:max-w-[540px] lg:max-w-[1540px] mx-auto px-4 md:px-8 py-8 md:py-10  rounded-3xl mb-10'> */}
-            <div className="carousel mx-auto">
+            {/* <div className="carousel mx-auto">
 
-                {/* <div id="slide1" className="carousel-item relative w-full bg-no-repeat" style={{ backgroundImage: 'url(https://i.postimg.cc/LsNn07qd/iqx-azmi-894-I5hk0-Xkc-unsplash.jpg)' }}>
-                    <img src={s1} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div> */}
 
-                {/* ----------- csl ------------- */}
-                {/* <div id="slide1" className='carousel-item relative hero w-[210px] max-w-[0px] mx-auto  rounded-3xl mb-10  bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/fRbP4SyV/iraj-ishtiak-4hx4-Tlg8ii-I-unsplash.jpg)' }}>
-                    <div className='hero-overlay bg-transparent rounded-3xl flex flex-col md:flex-row items-end '>
-                        <div className='rounded-3xl w-full md:w-[70%] pt-10'>
-                            <div className='text-[16px] md:text-2xl font-thin text-lime-500 lg:text-3xl '>
-                                <h1 class="font-bold md:m-10">
-                                    Offers breathtaking views of hills, lakes, and tribal villages.
-                                </h1>
-                            </div>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide6" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❮</a>
-                                <a href="#slide2" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❯</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slide2" className='carousel-item relative hero max-w-[370px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10  bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/zGLppMqV/mario-la-pergola-KTHA8-H-qp-Ow-unsplash.jpg)' }}>
-                    <div className='hero-overlay bg-transparent rounded-3xl flex flex-col md:flex-row items-end '>
-                        <div className='rounded-3xl w-full md:w-[70%] pt-10'>
-                            <div className='text-[16px] md:text-2xl font-thin text-lime-500 lg:text-3xl '>
-                                <h1 class="font-bold md:m-10">
-                                    Offers breathtaking views of hills, lakes, and tribal villages.
-                                </h1>
-                            </div>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide1" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❮</a>
-                                <a href="#slide3" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❯</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slide3" className='carousel-item relative hero max-w-[370px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10  bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/fRbP4SyV/iraj-ishtiak-4hx4-Tlg8ii-I-unsplash.jpg)' }}>
-                    <div className='hero-overlay bg-transparent rounded-3xl flex flex-col md:flex-row items-end '>
-                        <div className='rounded-3xl w-full md:w-[70%] pt-10'>
-                            <div className='text-[16px] md:text-2xl font-thin text-lime-500 lg:text-3xl '>
-                                <h1 class="font-bold md:m-10">
-                                    Offers breathtaking views of hills, lakes, and tribal villages.
-                                </h1>
-                            </div>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide2" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❮</a>
-                                <a href="#slide4" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❯</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slide4" className='carousel-item relative hero max-w-[370px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10  bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/fRbP4SyV/iraj-ishtiak-4hx4-Tlg8ii-I-unsplash.jpg)' }}>
-                    <div className='hero-overlay bg-transparent rounded-3xl flex flex-col md:flex-row items-end '>
-                        <div className='rounded-3xl w-full md:w-[70%] pt-10'>
-                            <div className='text-[16px] md:text-2xl font-thin text-lime-500 lg:text-3xl '>
-                                <h1 class="font-bold md:m-10">
-                                    Offers breathtaking views of hills, lakes, and tribal villages.
-                                </h1>
-                            </div>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide3" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❮</a>
-                                <a href="#slide5" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❯</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slide5" className='carousel-item relative hero max-w-[370px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10  bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/fRbP4SyV/iraj-ishtiak-4hx4-Tlg8ii-I-unsplash.jpg)' }}>
-                    <div className='hero-overlay bg-transparent rounded-3xl flex flex-col md:flex-row items-end '>
-                        <div className='rounded-3xl w-full md:w-[70%] pt-10'>
-                            <div className='text-[16px] md:text-2xl font-thin text-lime-500 lg:text-3xl '>
-                                <h1 class="font-bold md:m-10">
-                                    Offers breathtaking views of hills, lakes, and tribal villages.
-                                </h1>
-                            </div>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide4" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❮</a>
-                                <a href="#slide6" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❯</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slide6" className='carousel-item relative hero max-w-[370px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10  bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/fRbP4SyV/iraj-ishtiak-4hx4-Tlg8ii-I-unsplash.jpg)' }}>
-                    <div className='hero-overlay bg-transparent rounded-3xl flex flex-col md:flex-row items-end '>
-                        <div className='rounded-3xl w-full md:w-[70%] pt-10'>
-                            <div className='text-[16px] md:text-2xl font-thin text-lime-500 lg:text-3xl '>
-                                <h1 class="font-bold md:m-10">
-                                    Offers breathtaking views of hills, lakes, and tribal villages.
-                                </h1>
-                            </div>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide5" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❮</a>
-                                <a href="#slide1" className="btn btn-sm md:btn-square lg:btn-square lg:w-16 lg:h-24  bg-lime-700">❯</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
 
                 <div id="slide1" className="carousel-item relative w-full bg-no-repeat" >
                     <div className="w-full h-full flex flex-col justify-end">
@@ -247,7 +151,8 @@ const Slider = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
+
         </div>
     );
 };

@@ -18,7 +18,7 @@ const BookCard = ({ book }) => {
             <div className='bg-blue-300 shadow-xl w-full lg:max-w-[1540px] px-4 md:px-8 py-8 md:py-12 rounded-3xl flex flex-col md:flex-row items-center mb-10 gap-6 md:text-xl mx-auto'>
 
                 <div className='w-[150px] h-[200px]'>
-                    <img src={photo} alt="Book" />
+                    <img src={photo} className='max-h-44' alt="Book" />
                 </div>
                 <div className="flex flex-col gap-4">
                     <h2 className="text-[24px] font-bold">{bookName}</h2>
@@ -84,7 +84,7 @@ const BookCard = ({ book }) => {
 
                         {/* Update */}
                         <Link to={`/updateBook/${book._id}`}>
-                            <button className="btn btn-outline  btn-info">Update</button>
+                            <button className="btn btn-outline bg-cyan-400">Update</button>
                         </Link>
                     </div>
                 </div>
