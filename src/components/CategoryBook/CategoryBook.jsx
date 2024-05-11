@@ -81,7 +81,7 @@ const CategoryBook = ({ book }) => {
 
                         {/* Update */}
                         <Link to={`/updateBook/${book._id}`}>
-                            <button className="btn btn-outline  btn-info">Update</button>
+                            <button className="btn btn-outline bg-cyan-400">Update</button>
                         </Link>
                     </div>
                 </div>

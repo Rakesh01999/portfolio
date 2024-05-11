@@ -15,7 +15,7 @@ import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import Footer from './components/Footer/Footer.jsx';
-import ResidentialDetails from './components/ResidentialDetails/ResidentialDetails.jsx';
+// import ResidentialDetails from './components/ResidentialDetails/ResidentialDetails.jsx';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import UserProfile from './components/UserProfile/UserProfile.jsx';
 import UpdateProfile from './components/UpdateProfile/UpdateProfile.jsx';
@@ -24,10 +24,7 @@ import { register } from 'swiper/element/bundle';
 import Articles from './components/Articles/Articles.jsx';
 import MapView from './components/MapView/MapView.jsx';
 import MyList from './components/MyList/MyList.jsx';
-import UpdateSpot from './components/UpdateSpot/UpdateSpot.jsx';
 import ViewDetails from './components/ViewDetails/ViewDetails.jsx';
-import Residentials from './components/Residentials/Residentials.jsx';
-import AddCountry from './components/AddCountry/AddCountry.jsx';
 import Countries from './components/Countries/Countries.jsx';
 import CountrySpots from './components/CountrySpots/CountrySpots.jsx';
 import AllBook from './components/AllBook/AllBook.jsx';
@@ -57,16 +54,6 @@ const router = createBrowserRouter([
       {
         path: '/residential',
         element: <Residential></Residential>,
-        loader: () => fetch('https://tourist-spot-server-rho.vercel.app/spot')
-      },
-      // {
-      //   path: '/residentials',
-      //   element: <Residentials></Residentials> ,
-      //   loader: () => fetch('https://tourist-spot-server-8z3k5bjru-rakesh-biswas-projects.vercel.app/spot')
-      // },
-      {
-        path: '/residential/:id',
-        element: <PrivateRoute><ResidentialDetails></ResidentialDetails></PrivateRoute> ,
         loader: () => fetch('https://tourist-spot-server-rho.vercel.app/spot')
       },
       {
@@ -112,11 +99,6 @@ const router = createBrowserRouter([
         loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
       },
       {
-        path: '/updateSpot/:id',
-        element: <UpdateSpot></UpdateSpot>,
-        loader: ({params}) => fetch(`https://tourist-spot-server-rho.vercel.app/spot/${params.id}`)
-      },
-      {
         path: '/myList',
         element: <PrivateRoute><MyList></MyList> </PrivateRoute>,
         loader: () => fetch('http://localhost:5000/borrowedBook')
@@ -135,10 +117,6 @@ const router = createBrowserRouter([
         path: '/categories',
         element: <Categories></Categories>,
         loader: () => fetch('http://localhost:5000/category')
-      },
-      {
-        path: '/addCountry',
-        element: <AddCountry></AddCountry>
       },
       {
         path: '/addCategory',

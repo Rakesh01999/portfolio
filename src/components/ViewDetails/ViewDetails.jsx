@@ -3,24 +3,27 @@ import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const ViewDetails = () => {
 
-    // const [borrowedBook, setBorrowedBook] = useState([]);
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/borrowedBook')
-    //         .then(res => res.json())
-    //         .then(data => setBorrowedBook(data));
-    // }, [])
+    const [borrowedBooks, setBorrowedBooks] = useState([]);
     // const { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents } = borrowedBook;
+    useEffect(() => {
+        fetch('http://localhost:5000/borrowedBook')
+            .then(res => res.json())
+            .then(data => setBorrowedBooks(data));
+    }, [])
+    // console.log('borrowedBooks',borrowedBooks);
+
 
     const book = useLoaderData();
     const { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents } = book;
     // const { bookName, book_id, photo, shortDescription, authorName, quantityBook, category, rating, contents } = book;
 
     const { user } = useContext(AuthContext);
-    // console.log(user.email);
-    // console.log(user.displayName);
+    
 
     // ------- borrow date ------ 
     const [borrowDate, setBorrowDate] = useState(new Date().toISOString().substr(0, 10)); // Set initial value to today's date
@@ -44,9 +47,24 @@ const ViewDetails = () => {
         // const rating = form.rating.value;
         // const contents = form.contents.value;
 
+
+        const isAlreadyBorrowed = borrowedBooks.find((borrowedBook) =>
+            borrowedBook.bookId === book._id && borrowedBook.email === user.email
+        );
+        console.log(isAlreadyBorrowed);
+        // if already exist or not 
+        if (isAlreadyBorrowed) {
+            Swal.fire({
+                title: 'Error!',
+                text: 'You have already borrowed this book.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+            toast.error("You can't borrow ");
+            return;
+        }
+
         // update data to the server
-
-
         const updateBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
         // const updateBook = { bookName, photo, shortDescription, authorName, category, rating, contents }
 
@@ -155,18 +173,16 @@ const ViewDetails = () => {
                         </div>
                     </div>
                     <div className="flex gap-4 mt-4">
-                        {/* <button  className="btn w-[128px] h-[57px] text-[18px]">Read</button> */}
-                        {/* <button className="btn bg-[#50B1C9] text-white w-[128px] h-[57px] text-[18px]">Borrow</button> */}
-
 
                         {/* --------------- MODAL ---------------- */}
-
+                        {/* <button className="btn btn-block">block</button> */}
                         {/* Open the modal using document.getElementById('ID').showModal() method */}
+                        
                         {
-                            quantityBook > 0 ? (
+                            (quantityBook > 0) ? (
                                 <div className="form-control col-span-full">
                                     {/* <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" /> */}
-                                    <button className="btn btn-block bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button>
+                                    <button className="btn w-full bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button>
                                 </div>
                             ) : (
                                 <div className="form-control col-span-full">
@@ -236,6 +252,8 @@ const ViewDetails = () => {
                     </div>
                 </div>
             </div>
+            
+            {/* <ToastContainer></ToastContainer> */}
         </div>
     );
 };

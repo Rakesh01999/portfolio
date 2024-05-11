@@ -258,7 +258,7 @@ const Login = () => {
                             </div>
                             <div>
                                 <p><button onClick={handleGoogleSignIn} className="btn btn-outline btn-primary md:text-[19px] w-full "> <FcGoogle className='text-[25px]' /> Continue with Google</button></p>
-                                <p><button onClick={handleGithubSignIn} className="btn btn-outline btn-primary mt-5 md:text-[19px] w-full"><FaGithub className='text-[25px]' />Continue with Github</button></p>
+                                {/* <p><button onClick={handleGithubSignIn} className="btn btn-outline btn-primary mt-5 md:text-[19px] w-full"><FaGithub className='text-[25px]' />Continue with Github</button></p> */}
                                 {/* <p><button onClick={handleFacebookSignIn} className="btn btn-outline btn-primary mt-5 text-[19px]">Continue with Facebook</button></p> */}
                                 {/* <p><button onClick={signInWithFacebook} className="btn btn-outline btn-primary mt-5 text-[19px]">Continue with Facebook</button></p> */}
                             </div>
