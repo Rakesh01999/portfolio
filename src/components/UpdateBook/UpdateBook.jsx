@@ -100,13 +100,6 @@ const UpdateBook = () => {
                         <input type="number" name="quantityBook" defaultValue={quantityBook} placeholder="Quantity_of_the_book" className="input input-bordered w-full" />
                     </div> */}
 
-                    {/* average_cost */}
-                    {/* <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Average_Cost</span>
-                        </label>
-                        <input type="text" name="averageCost" placeholder="Average_Cost" className="input input-bordered w-full" />
-                    </div> */}
 
                     {/* Category */}
                     {/* <div className="form-control">
@@ -117,7 +110,7 @@ const UpdateBook = () => {
                     </div> */}
 
                     {/* Category */}
-                    
+
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Category</span>
