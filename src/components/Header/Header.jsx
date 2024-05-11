@@ -11,7 +11,7 @@ import logo from '../../assets/book1.png'
 const Header = () => {
 
     const { user, logOut } = useContext(AuthContext);
-    console.log(user);
+    // console.log(user);
 
     const handleLogOut = () => {
         logOut()

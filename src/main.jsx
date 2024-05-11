@@ -119,8 +119,7 @@ const router = createBrowserRouter([
       {
         path: '/myList',
         element: <PrivateRoute><MyList></MyList> </PrivateRoute>,
-        loader: () => fetch('https://tourist-spot-server-rho.vercel.app/spot')
-        // loader: ({params}) => fetch(`https://tourist-spot-server-8z3k5bjru-rakesh-biswas-projects.vercel.app/spot/${params.email}`)
+        loader: () => fetch('http://localhost:5000/borrowedBook')
       },
       {
         path: '/viewDetails/:id',

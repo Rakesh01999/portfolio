@@ -16,7 +16,7 @@ const UpdateBook = () => {
         const photo = form.photo.value;
         const shortDescription = form.shortDescription.value;
         const authorName = form.authorName.value;
-        const quantityBook = form.quantityBook.value;
+        // const quantityBook = form.quantityBook.value;
         const category = form.category.value;
         const rating = form.rating.value;
         const contents = form.contents.value;
@@ -24,7 +24,6 @@ const UpdateBook = () => {
         // const name = form.name.value;
         // const email = form.email.value;
 
-        // const updateSpot = { spotName, photo, shortDescription, countryName, location, averageCost, seasonality, travelTime, totalVisitorsPerYear, name, email }
         const updateBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
 
         console.log(updateBook);
@@ -92,13 +91,14 @@ const UpdateBook = () => {
                         </label>
                         <input type="text" name="authorName" defaultValue={authorName} placeholder="Author_Name" className="input input-bordered w-full" />
                     </div>
-                    {/* Location */}
-                    <div className="form-control">
+
+                    {/* Quantity of the book */}
+                    {/* <div className="form-control">
                         <label className="label">
                             <span className="label-text">Quantity of the book</span>
                         </label>
                         <input type="number" name="quantityBook" defaultValue={quantityBook} placeholder="Quantity_of_the_book" className="input input-bordered w-full" />
-                    </div>
+                    </div> */}
 
                     {/* average_cost */}
                     {/* <div className="form-control">

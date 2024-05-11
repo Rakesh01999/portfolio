@@ -1,12 +1,22 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const ViewDetails = () => {
 
+    // const [borrowedBook, setBorrowedBook] = useState([]);
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/borrowedBook')
+    //         .then(res => res.json())
+    //         .then(data => setBorrowedBook(data));
+    // }, [])
+    // const { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents } = borrowedBook;
+
     const book = useLoaderData();
     const { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents } = book;
+    // const { bookName, book_id, photo, shortDescription, authorName, quantityBook, category, rating, contents } = book;
 
     const { user } = useContext(AuthContext);
     // console.log(user.email);
@@ -14,6 +24,82 @@ const ViewDetails = () => {
 
     // ------- borrow date ------ 
     const [borrowDate, setBorrowDate] = useState(new Date().toISOString().substr(0, 10)); // Set initial value to today's date
+
+    // -------- add borrow book ------
+    const handleAddBorrowedBook = event => {
+        event.preventDefault();
+
+        const form = event.target;
+
+        const name = form.name.value;
+        const email = form.email.value;
+        const borrowDate = form.borrowDate.value;
+        const returnDate = form.returnDate.value;
+        // const bookName = form.bookName.value;
+        // const photo = form.photo.value;
+        // const shortDescription = form.shortDescription.value;
+        // const authorName = form.authorName.value;
+        // const quantityBook = form.quantityBook.value;
+        // const category = form.category.value;
+        // const rating = form.rating.value;
+        // const contents = form.contents.value;
+
+        // update data to the server
+
+
+        const updateBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
+        // const updateBook = { bookName, photo, shortDescription, authorName, category, rating, contents }
+
+        fetch(`http://localhost:5000/book/decrement/${book._id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updateBook)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                // if (data.modifiedCount > 0) {
+                //     Swal.fire({
+                //         title: 'Success!',
+                //         text: 'Book Updated Successfully',
+                //         icon: 'success',
+                //         confirmButtonText: 'Cool'
+                //     })
+                // }
+            })
+
+        // send data to the server
+
+        const bookId = book._id;
+        console.log(bookId);
+        const newBorrowedBook = { bookName, bookId, photo, shortDescription, authorName, category, rating, contents, borrowDate, returnDate, name, email }
+        // const newBorrowedBook = { bookName, photo, shortDescription, authorName, category, rating, contents, borrowDate, returnDate, name, email }
+        console.log(newBorrowedBook);
+
+
+        fetch('http://localhost:5000/borrowedBook', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newBorrowedBook)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Book Borrowed Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    })
+                    // location.reload();
+                }
+            })
+    }
 
     return (
         <div>
@@ -72,15 +158,18 @@ const ViewDetails = () => {
                         {/* <button  className="btn w-[128px] h-[57px] text-[18px]">Read</button> */}
                         {/* <button className="btn bg-[#50B1C9] text-white w-[128px] h-[57px] text-[18px]">Borrow</button> */}
 
+
+                        {/* --------------- MODAL ---------------- */}
+
                         {/* Open the modal using document.getElementById('ID').showModal() method */}
                         <button className="btn bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button>
                         <dialog id="my_modal_5" className="modal modal-bottom  lg:modal-middle sm:modal-middle">
                             <div className="modal-box">
                                 {/* <h3 className="font-bold text-lg">Hello!</h3> */}
-                                <h3 className="font-bold text-lg text-blue-500">To borrow the book please fill up the below form</h3>
+                                <h3 className="font-bold text-lg text-blue-500 text-center">To borrow the book please fill up ( <span className="font-serif text-green-600">Return Date</span>  ) in the below form</h3>
                                 {/* <p className="py-4">Press ESC key or click the button below to close</p> */}
                                 {/* ----- form ------ */}
-                                <form className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                                <form onSubmit={handleAddBorrowedBook} className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
 
                                     {/* Name */}
                                     <div className="form-control col-span-2 lg:col-span-4">
@@ -111,13 +200,22 @@ const ViewDetails = () => {
                                         <label className="label">
                                             <span className="label-text">Return_Date</span>
                                         </label>
-                                        <input type="date" name="returnDate" placeholder="Return_Date" className="input input-bordered w-full" />
+                                        <input type="date" name="returnDate" placeholder="Return_Date" required className="input input-bordered w-full" />
                                     </div>
 
 
                                     {/* Submit Button */}
                                     <div className="form-control col-span-full">
-                                        <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" />
+                                        {/* <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" /> */}
+
+                                        <input
+                                            type="submit"
+                                            value="Submit to borrow"
+                                            className="btn bg-blue-600 text-white"
+                                            disabled={quantityBook === 0} // Disable the button if quantity is 0
+                                            // onClick={handleBorrow}
+                                        />
+
                                     </div>
                                 </form>
                                 <div className="modal-action">
