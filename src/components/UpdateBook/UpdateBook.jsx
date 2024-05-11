@@ -109,12 +109,29 @@ const UpdateBook = () => {
                     </div> */}
 
                     {/* Category */}
-                    <div className="form-control">
+                    {/* <div className="form-control">
                         <label className="label">
                             <span className="label-text">Category</span>
                         </label>
                         <input type="text" name="category" defaultValue={category} placeholder="Category" className="input input-bordered w-full" />
+                    </div> */}
+
+                    {/* Category */}
+                    
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Category</span>
+                        </label>
+                        <select name="category" defaultValue={category} className="select select-bordered w-full">
+                            <option value="Novel">Novel</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="History">History</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                        </select>
                     </div>
+
+
                     {/* Rating */}
                     <div className="form-control">
                         <label className="label">
