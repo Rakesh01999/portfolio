@@ -96,9 +96,9 @@ const ViewDetails = () => {
                         icon: 'success',
                         confirmButtonText: 'OK'
                     })
-                    // location.reload();
                 }
             })
+        location.reload();
     }
 
     return (
@@ -162,7 +162,23 @@ const ViewDetails = () => {
                         {/* --------------- MODAL ---------------- */}
 
                         {/* Open the modal using document.getElementById('ID').showModal() method */}
-                        <button className="btn bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button>
+                        {
+                            quantityBook > 0 ? (
+                                <div className="form-control col-span-full">
+                                    {/* <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" /> */}
+                                    <button className="btn btn-block bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button>
+                                </div>
+                            ) : (
+                                <div className="form-control col-span-full">
+                                    {/* <input type="submit" value="Out of Stock" className="btn bg-gray-400 text-white" disabled /> */}
+                                    <button className="btn bg-blue-600 text-white" disabled="disabled">Out of Stock</button>
+                                </div>
+                            )
+                        }
+
+                        {/* <button className="btn bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button> */}
+
+
                         <dialog id="my_modal_5" className="modal modal-bottom  lg:modal-middle sm:modal-middle">
                             <div className="modal-box">
                                 {/* <h3 className="font-bold text-lg">Hello!</h3> */}
@@ -203,20 +219,11 @@ const ViewDetails = () => {
                                         <input type="date" name="returnDate" placeholder="Return_Date" required className="input input-bordered w-full" />
                                     </div>
 
-
                                     {/* Submit Button */}
                                     <div className="form-control col-span-full">
-                                        {/* <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" /> */}
-
-                                        <input
-                                            type="submit"
-                                            value="Submit to borrow"
-                                            className="btn bg-blue-600 text-white"
-                                            disabled={quantityBook === 0} // Disable the button if quantity is 0
-                                            // onClick={handleBorrow}
-                                        />
-
+                                        <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" />
                                     </div>
+
                                 </form>
                                 <div className="modal-action">
                                     <form method="dialog">

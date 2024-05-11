@@ -71,8 +71,8 @@ const MyList = () => {
                         console.log(data);
                         if (data.deletedCount > 0) {
                             Swal.fire({
-                                title: "Deleted!",
-                                text: "Your book has been deleted.",
+                                title: "Returned!",
+                                text: "Your book has been Returned.",
                                 icon: "success"
                             });
                             const remaining = borrowedBooks.filter(borrowedBook => borrowedBook._id !== _id);
