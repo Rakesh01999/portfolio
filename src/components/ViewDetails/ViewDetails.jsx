@@ -73,7 +73,7 @@ const ViewDetails = () => {
         // send data to the server
 
         const bookId = book._id;
-        console.log(bookId);
+        // console.log(bookId);
         const newBorrowedBook = { bookName, bookId, photo, shortDescription, authorName, category, rating, contents, borrowDate, returnDate, name, email }
         // const newBorrowedBook = { bookName, photo, shortDescription, authorName, category, rating, contents, borrowDate, returnDate, name, email }
         console.log(newBorrowedBook);
