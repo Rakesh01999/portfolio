@@ -49,7 +49,7 @@ const Header = () => {
         {/* <li><NavLink to="/allSpot">All Tourists Spot </NavLink></li> */}
         <li><NavLink to="/addBook">Add Book </NavLink></li>
         <li><NavLink to="/allBook">All Books </NavLink></li>
-        <li><NavLink to="/myList">My List </NavLink></li>
+        <li><NavLink to="/myList">Borrowed Books </NavLink></li>
         <li>
             {/* theme controller ---------- */}
             <div>
@@ -68,6 +68,7 @@ const Header = () => {
 
     return (
         <div className="navbar bg-base-100 w-[px] md:w-full h-28">
+        {/* <div className="navbar bg-cyan-300 w-[px] md:w-full h-28"> */}
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

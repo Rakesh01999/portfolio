@@ -23,10 +23,33 @@ const ViewDetails = () => {
     // const { bookName, book_id, photo, shortDescription, authorName, quantityBook, category, rating, contents } = book;
 
     const { user } = useContext(AuthContext);
-    
+
 
     // ------- borrow date ------ 
     const [borrowDate, setBorrowDate] = useState(new Date().toISOString().substr(0, 10)); // Set initial value to today's date
+
+    const checkBorrow = e => {
+        const isAlreadyBorrowed = borrowedBooks.find((borrowedBook) =>
+            borrowedBook.bookId === book._id && borrowedBook.email === user.email
+        );
+        console.log(isAlreadyBorrowed);
+        // if already exist or not 
+        if (isAlreadyBorrowed) {
+            Swal.fire({
+                title: 'Error!',
+                text: 'You have already borrowed this book. ',
+                // text: ' Borrowing a book twice for a single user is not allowed',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+            toast.error("You can't borrow ");
+            return;
+        }
+        else{
+            // () => document.getElementById('my_modal_5').showModal() ;
+            document.getElementById('my_modal_5').showModal() ;
+        }
+    }
 
     // -------- add borrow book ------
     const handleAddBorrowedBook = event => {
@@ -48,21 +71,7 @@ const ViewDetails = () => {
         // const contents = form.contents.value;
 
 
-        const isAlreadyBorrowed = borrowedBooks.find((borrowedBook) =>
-            borrowedBook.bookId === book._id && borrowedBook.email === user.email
-        );
-        console.log(isAlreadyBorrowed);
-        // if already exist or not 
-        if (isAlreadyBorrowed) {
-            Swal.fire({
-                title: 'Error!',
-                text: 'You have already borrowed this book.',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            });
-            toast.error("You can't borrow ");
-            return;
-        }
+
 
         // update data to the server
         const updateBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
@@ -177,19 +186,23 @@ const ViewDetails = () => {
                         {/* --------------- MODAL ---------------- */}
                         {/* <button className="btn btn-block">block</button> */}
                         {/* Open the modal using document.getElementById('ID').showModal() method */}
-                        
+
                         {
-                            (quantityBook > 0) ? (
-                                <div className="form-control col-span-full">
-                                    {/* <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" /> */}
-                                    <button className="btn w-full bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button>
-                                </div>
-                            ) : (
-                                <div className="form-control col-span-full">
-                                    {/* <input type="submit" value="Out of Stock" className="btn bg-gray-400 text-white" disabled /> */}
-                                    <button className="btn bg-blue-600 text-white" disabled="disabled">Out of Stock</button>
-                                </div>
-                            )
+                            (quantityBook > 0) ?
+                                (
+                                    <div className="form-control col-span-full">
+                                        {/* <input type="submit" value="Submit to borrow" className="btn bg-blue-600 text-white" /> */}
+                                        {/* <button className="btn w-full bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button> */}
+                                        <button className="btn w-full bg-blue-600 text-white" onClick={checkBorrow}>Borrow</button>
+                                    </div>
+                                )
+                                :
+                                (
+                                    <div className="form-control col-span-full">
+                                        {/* <input type="submit" value="Out of Stock" className="btn bg-gray-400 text-white" disabled /> */}
+                                        <button className="btn bg-blue-600 text-white" disabled="disabled">Out of Stock</button>
+                                    </div>
+                                )
                         }
 
                         {/* <button className="btn bg-blue-600 text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button> */}
@@ -252,7 +265,7 @@ const ViewDetails = () => {
                     </div>
                 </div>
             </div>
-            
+
             {/* <ToastContainer></ToastContainer> */}
         </div>
     );
