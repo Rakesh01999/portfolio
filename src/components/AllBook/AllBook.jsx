@@ -9,6 +9,7 @@ import BookTable from '../BookTable/BookTable';
 
 const AllBook = () => {
     const books = useLoaderData();
+    
     const [displayBooks, setDisplayBooks] = useState(books);
     const [viewMode, setViewMode] = useState('card'); // State to track the view mode (card or table)
 

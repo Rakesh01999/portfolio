@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase/firebase.config';
 import Swal from 'sweetalert2';
+import axios from 'axios';
 
 const Login = () => {
     const [usr, setUsr] = useState(null);
@@ -38,10 +39,20 @@ const Login = () => {
                     icon: 'success',
                     confirmButtonText: 'OK'
                 })
-                
+
                 // navigate after login
                 // toast.success('Successfully Logged in');
-                navigate(location?.state ? location.state : '/')
+
+
+                const user = { email };
+                // get access token
+                axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
+                    .then(res => {
+                        console.log(res.data)
+                        if (res.data.success) {
+                            navigate(location?.state ? location.state : '/')
+                        }
+                    })
             })
             .catch(error => {
                 console.error(error);
@@ -62,7 +73,7 @@ const Login = () => {
                 e.target.reset();
                 setUsr(loggedUsr);
                 console.log(usr.displayName);
-                
+
                 // navigate after login
                 navigate(location?.state ? location.state : '/')
                 toast.success('Successfully Logged in');
@@ -222,11 +233,11 @@ const Login = () => {
 
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col">
-                <div className="text-center ">
-                    <div className="text-3xl md:text-5xl font-bold text-violet-600 my-3">
-                        <h1 class="animate__animated animate__fadeInDown">Login now!</h1>
+                    <div className="text-center ">
+                        <div className="text-3xl md:text-5xl font-bold text-violet-600 my-3">
+                            <h1 class="animate__animated animate__fadeInDown">Login now!</h1>
+                        </div>
                     </div>
-                </div>
 
                     <div className="card flex-shrink-0 w-full md:w-[800px] md:h-[600px] max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
