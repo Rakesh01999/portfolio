@@ -1,20 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { useLoaderData } from 'react-router-dom';
 import { Zoom } from 'react-toastify';
 import BookCard from '../BookCard/BookCard';
 import BookTable from '../BookTable/BookTable';
+import axios from 'axios';
+import { data } from 'autoprefixer';
 // import BookTable from '../BookTable/BookTable'; // Import the BookTable component
 
 const AllBook = () => {
-    const books = useLoaderData();
-    
-    const [displayBooks, setDisplayBooks] = useState(books);
+    // const books = useLoaderData();
+    const url = 'http://localhost:5000/book';
+
+    const [displayBooks, setDisplayBooks] = useState([]);
     const [viewMode, setViewMode] = useState('card'); // State to track the view mode (card or table)
 
+
+    useEffect(() => {
+
+        axios.get(url, { withCredentials: true })
+            .then(res => {
+                setDisplayBooks(res.data);
+            })
+        // fetch(url)
+        // .then(res => res.json())
+        // .then(data => setDisplayBooks(data))
+    }, [url])
+    // console.log(displayBooks);
+
     const handleBookFilter = filter => {
-        let filteredBooks = [...books];
+        let filteredBooks = [...displayBooks];
         if (filter === 'availableBooks') {
             filteredBooks = filteredBooks.filter(book => book.quantityBook > 0);
         } else {

@@ -86,8 +86,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/allBook',
-        element: <PrivateRoute><AllBook></AllBook></PrivateRoute> ,
-        loader: () => fetch('http://localhost:5000/book')
+        element: <PrivateRoute><AllBook></AllBook></PrivateRoute> 
+        // loader: () => fetch('http://localhost:5000/book')
       },
       {
         path: '/addBook',

@@ -67,7 +67,7 @@ const BookTable = ({ displayBooks }) => {
 
                                             {/* Update */}
                                             <Link to={`/updateBook/${displayBook._id}`}>
-                                                <button className="btn btn-outline bg-cyan-400">Update</button>
+                                                <button className="btn btn-sm btn-outline md:h-12 bg-cyan-400">Update</button>
                                             </Link>
                                         </td>
                                     </tr>

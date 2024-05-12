@@ -147,7 +147,7 @@ const MyList = () => {
 
                                             {/* <form onSubmit={handleDecrement}>
                                             </form> */}
-                                            <button onClick={() => handleIncrement(borrowedBook.bookId, borrowedBook._id)} className="btn btn-success">Return</button>
+                                            <button onClick={() => handleIncrement(borrowedBook.bookId, borrowedBook._id)} className="btn btn-sm md:h-12 btn-success text-white">Return</button>
                                         </td>
                                     </tr>
                                 ))}
