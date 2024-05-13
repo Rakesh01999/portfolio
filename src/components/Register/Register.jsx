@@ -46,6 +46,10 @@ const Register = () => {
             setRegisterError('Your password should have at least one lower case characters.')
             return;
         }
+        else if (!/[!@#$%^&*()_+=[\]{};':"\\|,.<>/?]+/.test(password)) {
+            setRegisterError('Your password should have at least one special character.');
+            return;
+        }
 
         // create user in firebase
         createUser(email, password)
@@ -79,7 +83,7 @@ const Register = () => {
             </Helmet>
             <div className="hero-content flex-col">
                 <div className="text-center ">
-                    <div className="text-3xl md:text-5xl font-bold text-violet-600 my-3">
+                    <div className="text-3xl md:text-5xl font-bold text-blue-500 my-3">
                         <h1 class="animate__animated animate__fadeInDown">Register now!</h1>
                     </div>
                 </div>
@@ -120,7 +124,7 @@ const Register = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary font-bold text-[15px] md:text-[25px] text-white">Register</button>
+                                <button className="hover:bg-blue-600 btn btn-info font-bold text-[15px] md:text-[25px] text-white">Register</button>
                             </div>
                         </form>
 
@@ -132,7 +136,7 @@ const Register = () => {
                         }
 
                         <p className="font-semibold text-[] md:text-[17px]"> Already have account? Please <Link to="/login">
-                            <button className="btn btn-link font-bold text-[15px] md:text-[20px]">Login</button>
+                            <button className="btn text-blue-500 btn-link font-bold text-[15px] md:text-[20px]">Login</button>
                         </Link> </p>
                     </div>
                 </div>

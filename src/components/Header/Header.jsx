@@ -7,6 +7,7 @@ import { Tooltip } from 'react-tooltip'
 // import ReactTooltip from 'react-tooltip'
 // import logo from '../../assets/book1.png'
 import logo from '../../assets/book1.png'
+import { ToastContainer, toast } from "react-toastify";
 
 const Header = () => {
 
@@ -15,7 +16,10 @@ const Header = () => {
 
     const handleLogOut = () => {
         logOut()
-            .then(() => console.log('user logged out successfully'))
+            .then(() => {
+                console.log('user logged out successfully');
+                toast.success('User logged out Successfully.')
+            })
             .catch(error => console.error(error))
     }
 
@@ -68,7 +72,7 @@ const Header = () => {
 
     return (
         <div className="navbar bg-base-100 w-[px] md:w-full h-28">
-        {/* <div className="navbar bg-cyan-300 w-[px] md:w-full h-28"> */}
+            {/* <div className="navbar bg-cyan-300 w-[px] md:w-full h-28"> */}
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -82,7 +86,7 @@ const Header = () => {
 
                 <Link to="/" className="flex items-center">
                     {/* <img className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] border-2 border-violet-600 rounded-full mr-2" src={logo} alt="" /> */}
-                    <img className="w-[40px] h-[40px] md:w-[150px] md:h-[150px] mr-2" src={logo} alt="" />
+                    <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] mr-2" src={logo} alt="" />
                     {/* <span className="text-[15px] md:text-[40px] font-bold text-lime-600">Book Buddy</span> */}
                 </Link>
 
@@ -103,17 +107,17 @@ const Header = () => {
                     user ? <>
                         {/* <span>{user.email}</span> */}
                         {/* <span>{user.displayName}</span> */}
-                        <span>
+                        <div>
+                            <p className="text-blue-500 font-bold">{user.displayName}</p>
                             <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
-                                {/* <div> */}
                                 {/* <button className="btn">Hover me</button> */}
-                                <img className="w-[40px] h-[40px]  md:w-[60px] md:h-[60px] border-2 border-violet-600  rounded-full mr-1" src={user.photoURL} alt="" />
+                                <img className="w-[40px] h-[40px]  md:w-[60px] md:h-[60px] border-2 border-blue-600  rounded-full mr-1" src={user.photoURL} alt="" />
+
                             </div>
 
-
-                        </span>
+                        </div>
                         {/* <a onClick={handleLogOut} className="btn bg-[#59C6D2] text-white md:w-[116px] h-[57px] text-[20px]">Log out</a> */}
-                        <a onClick={handleLogOut} className="btn btn-primary btn-sm text-white  md:w-[116px] md:h-[57px] md:text-[20px]">Log out</a>
+                        <a onClick={handleLogOut} className="btn btn-info btn-sm text-white  md:w-[116px] md:h-[57px] md:text-[20px]">Log out</a>
                     </>
                         :
                         <div className="flex md:flex-row gap-2">
@@ -122,17 +126,18 @@ const Header = () => {
                                 <div className="flex items-center md:gap-2">
                                     {/* <CgProfile className="text-[50px]" /> */}
                                     {/* <span className="btn bg-[#59C6D2] text-white md:w-[116px] md:h-[57px] md:text-[20px]">Log in</span> */}
-                                    <span className="btn btn-primary btn-sm text-white md:w-[116px] md:h-[57px] md:text-[20px]">Log in</span>
+                                    <span className="btn btn-info btn-sm text-white md:w-[116px] md:h-[57px] md:text-[20px]">Log in</span>
                                 </div>
                             </Link>
                             <Link to="/register">
                                 <div className="flex items-center md:gap-2">
-                                    <span className="btn btn-sm bg-lime-300 text-blue-700  md:w-[116px] md:h-[57px] md:text-[20px]">Register</span>
+                                    <span className="btn btn-sm bg-green-300 text-blue-700  md:w-[116px] md:h-[57px] md:text-[20px]">Register</span>
                                 </div>
                             </Link>
                         </div>
                 }
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

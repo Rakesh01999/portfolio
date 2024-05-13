@@ -235,7 +235,7 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col">
                     <div className="text-center ">
-                        <div className="text-3xl md:text-5xl font-bold text-violet-600 my-3">
+                        <div className="text-3xl md:text-5xl font-bold text-blue-600 my-3">
                             <h1 class="animate__animated animate__fadeInDown">Login now!</h1>
                         </div>
                     </div>
@@ -259,17 +259,17 @@ const Login = () => {
                                     </label>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn btn-primary font-bold text-[15px] md:text-[20px] text-white">Login</button>
+                                    <button className="hover:bg-blue-600 btn btn-info font-bold text-[15px] md:text-[20px] text-white">Login</button>
                                 </div>
                             </form>
                             <p className='text-[18px]'> New to this site? Please <Link to="/register">
-                                <button className="btn btn-link text-[18px]">Register</button>
+                                <button className="btn text-blue-600 btn-link text-[18px]">Register</button>
                             </Link> </p>
                             <div>
                                 <h2 className='text-center font-semibold text-[20px]'>or</h2>
                             </div>
                             <div>
-                                <p><button onClick={handleGoogleSignIn} className="btn btn-outline btn-primary md:text-[19px] w-full "> <FcGoogle className='text-[25px]' /> Continue with Google</button></p>
+                                <p><button onClick={handleGoogleSignIn} className=" btn btn-outline btn-info md:text-[19px] w-full "> <FcGoogle className='text-[25px]' /> Continue with Google</button></p>
                                 {/* <p><button onClick={handleGithubSignIn} className="btn btn-outline btn-primary mt-5 md:text-[19px] w-full"><FaGithub className='text-[25px]' />Continue with Github</button></p> */}
                                 {/* <p><button onClick={handleFacebookSignIn} className="btn btn-outline btn-primary mt-5 text-[19px]">Continue with Facebook</button></p> */}
                                 {/* <p><button onClick={signInWithFacebook} className="btn btn-outline btn-primary mt-5 text-[19px]">Continue with Facebook</button></p> */}

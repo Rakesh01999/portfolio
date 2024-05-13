@@ -44,7 +44,7 @@ const ViewDetails = () => {
                 icon: 'error',
                 confirmButtonText: 'OK'
             });
-            toast.error("You can't borrow ");
+            toast.error("Borrowing a book twice for a single user is not allowed ");
             return;
         }
         else if (userBorrowedBook.length >= 3 ) {
@@ -55,7 +55,7 @@ const ViewDetails = () => {
                 icon: 'info',
                 confirmButtonText: 'OK'
             });
-            toast.error("You can't borrow ");
+            toast.error("Users aren't allowed to borrow more than three books  ");
             return;
         }
         else{
