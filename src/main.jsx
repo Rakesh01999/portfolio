@@ -87,7 +87,6 @@ const router = createBrowserRouter([
       {
         path: '/allBook',
         element: <PrivateRoute><AllBook></AllBook></PrivateRoute> 
-        // loader: () => fetch('http://localhost:5000/book')
       },
       {
         path: '/addBook',
@@ -96,17 +95,17 @@ const router = createBrowserRouter([
       {
         path: '/updateBook/:id',
         element: <PrivateRoute><UpdateBook></UpdateBook></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
+        loader: ({params}) => fetch(`https://library-server-blue.vercel.app/book/${params.id}`)
       },
       {
         path: '/myList',
         element: <PrivateRoute><MyList></MyList> </PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/borrowedBook')
+        loader: () => fetch('https://library-server-blue.vercel.app/borrowedBook')
       },
       {
         path: '/viewDetails/:id',
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
-        loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
+        loader: ({params}) => fetch(`https://library-server-blue.vercel.app/book/${params.id}`)
       },
       {
         path: '/countries',
@@ -116,7 +115,7 @@ const router = createBrowserRouter([
       {
         path: '/categories',
         element: <Categories></Categories>,
-        loader: () => fetch('http://localhost:5000/category')
+        loader: () => fetch('https://library-server-blue.vercel.app/category')
       },
       {
         path: '/addCategory',
@@ -130,7 +129,7 @@ const router = createBrowserRouter([
       {
         path: '/categoryBooks/:id',
         element: <CategoryBooks></CategoryBooks>,
-        loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+        loader: ({params}) => fetch(`https://library-server-blue.vercel.app/category/${params.id}`)
       }
     ]
   },

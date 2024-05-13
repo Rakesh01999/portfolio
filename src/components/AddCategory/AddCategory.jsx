@@ -14,11 +14,11 @@ const AddCategory = () => {
         
         const category = {  photo, categoryName }
 
-        console.log(category);
+        // console.log(category);
 
         // send data to the server
 
-        fetch('http://localhost:5000/category', {
+        fetch('https://library-server-blue.vercel.app/category', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -27,7 +27,7 @@ const AddCategory = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.insertedId) {
                     Swal.fire({
                         title: 'Success!',

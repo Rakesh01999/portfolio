@@ -17,7 +17,7 @@ const Header = () => {
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                console.log('user logged out successfully');
+                // console.log('user logged out successfully');
                 toast.success('User logged out Successfully.')
             })
             .catch(error => console.error(error))

@@ -19,7 +19,7 @@ const MyList = () => {
     // ------- Books ---------
     const [book, setBook] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/book')
+        fetch('https://library-server-blue.vercel.app/book')
             .then(res => res.json())
             .then(data => setBook(data));
     }, [])
@@ -32,8 +32,7 @@ const MyList = () => {
         const updateBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
         // const updateBook = { bookName, photo, shortDescription, authorName, category, rating, contents }
 
-        // fetch(`http://localhost:5000/book/increment/${book._id}`, {
-        fetch(`http://localhost:5000/book/increment/${bookId}`, {
+        fetch(`https://library-server-blue.vercel.app/book/increment/${bookId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -61,7 +60,7 @@ const MyList = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/borrowedBook/${_id}`, {
+                fetch(`https://library-server-blue.vercel.app/borrowedBook/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

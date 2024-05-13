@@ -14,8 +14,7 @@ const AllBook = () => {
     const {user, email} = useContext(AuthContext);
     // const books = useLoaderData();
 
-    // const url = 'http://localhost:5000/book';
-    const url = `http://localhost:5000/book?email=${user?.email}`;
+    const url = `https://library-server-blue.vercel.app/book?email=${user?.email}`;
 
     const [displayBooks, setDisplayBooks] = useState([]);
     const [viewMode, setViewMode] = useState('card'); // State to track the view mode (card or table)

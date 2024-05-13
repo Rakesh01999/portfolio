@@ -7,8 +7,8 @@ import axios from 'axios';
 const AddBook = () => {
 
     const { user } = useContext(AuthContext);
-    // console.log(user);
-    const url = `http://localhost:5000/book?email=${user?.email}`;
+    
+    const url = `https://library-server-blue.vercel.app/book?email=${user?.email}`;
 
     const handleAddBook = event => {
         event.preventDefault();
@@ -30,37 +30,13 @@ const AddBook = () => {
         // const newSpot = { spotName, photo, shortDescription, countryName, location, averageCost, seasonality, travelTime, totalVisitorsPerYear, name, email }
         // console.log(newSpot);
         const newBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
-        console.log(newBook);
+        // console.log(newBook);
 
 
         // send data to the server
 
 
 
-        // fetch(`http://localhost:5000/book?email=${user?.email}`, user, { credentials: true }, {
-        // fetch(`http://localhost:5000/book?email=${user?.email}`, user, { credentials:true }, {
-        // fetch('http://localhost:5000/book', user, { credentials: true }, {
-        // fetch('url', user, { credentials: true }, {
-        // fetch('http://localhost:5000/book', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(newBook)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         if (data.insertedId) {
-        //             Swal.fire({
-        //                 title: 'Success!',
-        //                 text: 'Book Added Successfully',
-        //                 icon: 'success',
-        //                 confirmButtonText: 'Cool'
-        //             })
-        //             location.reload();
-        //         }
-        //     })
 
             //  ------------- Test 
             axios.post(url, newBook, { withCredentials: true })

@@ -11,7 +11,7 @@ const ViewDetails = () => {
     const [borrowedBooks, setBorrowedBooks] = useState([]);
     // const { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents } = borrowedBook;
     useEffect(() => {
-        fetch('http://localhost:5000/borrowedBook')
+        fetch('https://library-server-blue.vercel.app/borrowedBook')
             .then(res => res.json())
             .then(data => setBorrowedBooks(data));
     }, [])
@@ -90,7 +90,7 @@ const ViewDetails = () => {
         const updateBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
         // const updateBook = { bookName, photo, shortDescription, authorName, category, rating, contents }
 
-        fetch(`http://localhost:5000/book/decrement/${book._id}`, {
+        fetch(`https://library-server-blue.vercel.app/book/decrement/${book._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -116,10 +116,10 @@ const ViewDetails = () => {
         // console.log(bookId);
         const newBorrowedBook = { bookName, bookId, photo, shortDescription, authorName, category, rating, contents, borrowDate, returnDate, name, email }
         // const newBorrowedBook = { bookName, photo, shortDescription, authorName, category, rating, contents, borrowDate, returnDate, name, email }
-        console.log(newBorrowedBook);
+        // console.log(newBorrowedBook);
 
 
-        fetch('http://localhost:5000/borrowedBook', {
+        fetch('https://library-server-blue.vercel.app/borrowedBook', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

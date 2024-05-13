@@ -55,18 +55,18 @@ const AuthProvider = ({ children }) => {
             setLoading(false);
             const userEmail = currentUser?.email || user?.email;
             const loggedUser = { email: userEmail };
-            console.log('Current value of the current user', currentUser);
+            // console.log('Current value of the current user', currentUser);
             // if user exists then issue a token
             if (currentUser) {
-                axios.post('http://localhost:5000/jwt', loggedUser, { withCredentials: true })
+                axios.post('https://library-server-blue.vercel.app/jwt', loggedUser, { withCredentials: true })
                     .then(res => {
-                        console.log('token response', res.data);
+                        // console.log('token response', res.data);
                     })
             }
             else {
-                axios.post('http://localhost:5000/logout', loggedUser, { withCredentials: true })
+                axios.post('https://library-server-blue.vercel.app/logout', loggedUser, { withCredentials: true })
                     .then(res => {
-                        console.log('token response', res.data);
+                        // console.log('token response', res.data);
                     })
             }
         });

@@ -27,7 +27,7 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         // console.log(name);
-        console.log(name, photo, email, password);
+        // console.log(name, photo, email, password);
 
         // reset error and success ----------------
         setRegisterError('');

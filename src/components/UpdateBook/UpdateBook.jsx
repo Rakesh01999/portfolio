@@ -26,11 +26,11 @@ const UpdateBook = () => {
 
         const updateBook = { bookName, photo, shortDescription, authorName, quantityBook, category, rating, contents }
 
-        console.log(updateBook);
+        // console.log(updateBook);
 
         // update data to the server
 
-        fetch(`http://localhost:5000/book/${book._id}`, {
+        fetch(`https://library-server-blue.vercel.app/book/${book._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

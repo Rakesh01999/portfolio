@@ -18,18 +18,18 @@ const Login = () => {
     const { signInUser, signInWithGoogle, signInWithGithub, signInWithFacebook } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    console.log(location);
+    // console.log(location);
 
     const handleLogin = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+        // console.log(email, password);
 
         signInUser(email, password)
             .then(result => {
                 const loggedUsr = result.user;
-                console.log(loggedUsr);
+                // console.log(loggedUsr);
                 const user = { email };
                 e.target.reset();
                 setUsr(loggedUsr);
@@ -46,14 +46,6 @@ const Login = () => {
                 navigate(location?.state ? location.state : '/')
                         
 
-                // get access token
-                // axios.post('http://localhost:5000/jwt', user, {withCredentials: true})
-                //     .then(res => {
-                //         console.log(res.data)
-                //         if (res.data.success) {
-                //             navigate(location?.state ? location.state : '/')
-                //         }
-                //     })
             })
             .catch(error => {
                 console.error(error);
@@ -70,10 +62,10 @@ const Login = () => {
                 // console.log(result.user)
                 // setUsr(result.user);
                 const loggedUsr = result.user;
-                console.log(loggedUsr)
+                // console.log(loggedUsr)
                 e.target.reset();
                 setUsr(loggedUsr);
-                console.log(usr.displayName);
+                // console.log(usr.displayName);
 
                 // navigate after login
                 navigate(location?.state ? location.state : '/')
@@ -95,11 +87,11 @@ const Login = () => {
 
                 // ---------
                 // const loggedUsr = result.user;
-                console.log(result.user)
-                console.log(currentUser)
+                // console.log(result.user)
+                // console.log(currentUser)
                 e.target.reset();
                 setUsr(loggedUsr);
-                console.log(usr.displayName);
+                // console.log(usr.displayName);
 
 
 

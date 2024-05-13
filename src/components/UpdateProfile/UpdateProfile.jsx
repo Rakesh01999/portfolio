@@ -12,7 +12,7 @@ const UpdateProfile = () => {
 
     const { user } = useContext(AuthContext);
     // console.log(auth.currentUser);
-    console.log(user) ;
+    // console.log(user) ;
 
     useEffect(() => {
         if (auth.currentUser) {

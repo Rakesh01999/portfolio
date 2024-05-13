@@ -8,7 +8,7 @@ const CountrySpots = () => {
     // ------ country -------
     const country = useLoaderData();
     const { countryName } = country;
-    console.log(countryName);
+    // console.log(countryName);
 
     // ------- spots ---------
     const [spots, setSpots] = useState([]);
