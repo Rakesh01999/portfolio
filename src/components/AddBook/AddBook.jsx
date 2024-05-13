@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../../Providers/AuthProvider';
+import axios from 'axios';
 
 const AddBook = () => {
+
+    const { user } = useContext(AuthContext);
+    // console.log(user);
+    const url = `http://localhost:5000/book?email=${user?.email}`;
 
     const handleAddBook = event => {
         event.preventDefault();
@@ -29,27 +35,52 @@ const AddBook = () => {
 
         // send data to the server
 
-        // fetch(`http://localhost:5000/book?email=${user?.email}`, {
-        fetch('http://localhost:5000/book', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(newBook)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                if (data.insertedId) {
+
+
+        // fetch(`http://localhost:5000/book?email=${user?.email}`, user, { credentials: true }, {
+        // fetch(`http://localhost:5000/book?email=${user?.email}`, user, { credentials:true }, {
+        // fetch('http://localhost:5000/book', user, { credentials: true }, {
+        // fetch('url', user, { credentials: true }, {
+        // fetch('http://localhost:5000/book', {
+        //     method: 'POST',
+        //     headers: {
+        //         'content-type': 'application/json'
+        //     },
+        //     body: JSON.stringify(newBook)
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data);
+        //         if (data.insertedId) {
+        //             Swal.fire({
+        //                 title: 'Success!',
+        //                 text: 'Book Added Successfully',
+        //                 icon: 'success',
+        //                 confirmButtonText: 'Cool'
+        //             })
+        //             location.reload();
+        //         }
+        //     })
+
+            //  ------------- Test 
+            axios.post(url, newBook, { withCredentials: true })
+            .then(res => {
+                if (res.data.insertedId) {
                     Swal.fire({
                         title: 'Success!',
                         text: 'Book Added Successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
-                    })
+                    });
                     location.reload();
                 }
             })
+            .catch(error => {
+                console.error('Error adding book:', error);
+                // Handle error here
+            });
+
+
     }
 
     return (

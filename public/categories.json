@@ -1,23 +1,26 @@
 [
-    {
-      "image": "https://i.postimg.cc/FKdCxHWG/Novel.jpg",
-      "category": "Novel"
-    },
-    {
-      "image": "https://i.postimg.cc/C1kmkWG6/Thriller.jpg",
-      "category": "Thriller"
-    },
-    {
-      "image": "https://i.postimg.cc/mr0mcbHH/History.jpg",
-      "category": "History"
-    },
-    {
-      "image": "https://i.postimg.cc/FKfPsf7v/Drama.jpg",
-      "category": "Drama"
-    },
-    {
-      "image": "https://i.postimg.cc/m2GKXShH/Sci-Fi.jpg",
-      "category": "Sci-Fi"
-    }
-  ]
-  
+  {
+    "image": "https://i.postimg.cc/FKdCxHWG/Novel.jpg",
+    "category": "Novel"
+  },
+  {
+    "image": "https://i.postimg.cc/C1kmkWG6/Thriller.jpg",
+    "category": "Thriller"
+  },
+  {
+    "image": "https://i.postimg.cc/mr0mcbHH/History.jpg",
+    "category": "History"
+  },
+  {
+    "image": "https://i.postimg.cc/FKfPsf7v/Drama.jpg",
+    "category": "Drama"
+  },
+  {
+    "image": "https://i.postimg.cc/m2GKXShH/Sci-Fi.jpg",
+    "category": "Sci-Fi"
+  },
+  {
+    "photo": "https://i.postimg.cc/L6qd0wQX/Fantasy.jpg",
+    "categoryName": "Fantasy"
+  }
+]

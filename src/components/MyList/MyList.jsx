@@ -13,6 +13,9 @@ const MyList = () => {
     const userBorrowedBook = slBorrowedBook.filter((borrowedBook) => borrowedBook.email === user.email);
     const [borrowedBooks, setBorrowedBooks] = useState(userBorrowedBook);
 
+
+    // console.log(userBorrowedBook.length);
+
     // ------- Books ---------
     const [book, setBook] = useState([]);
     useEffect(() => {
@@ -40,14 +43,7 @@ const MyList = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                // if (data.modifiedCount > 0) {
-                    // Swal.fire({
-                    //     title: 'Success!',
-                    //     text: 'Book Returned Successfully',
-                    //     icon: 'success',
-                    //     confirmButtonText: 'Cool'
-                    // })
-                // }
+                
             })
         // console.log('clicked return ');
 
@@ -56,7 +52,8 @@ const MyList = () => {
         Swal.fire({
             title: "Are you sure?",
             text: "You want to return this book !",
-            icon: "warning",
+            // icon: "warning",
+            icon: "question",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",

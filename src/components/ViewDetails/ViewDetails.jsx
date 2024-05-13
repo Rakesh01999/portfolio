@@ -32,7 +32,9 @@ const ViewDetails = () => {
         const isAlreadyBorrowed = borrowedBooks.find((borrowedBook) =>
             borrowedBook.bookId === book._id && borrowedBook.email === user.email
         );
-        console.log(isAlreadyBorrowed);
+        const userBorrowedBook = borrowedBooks.filter((borrowedBook) => borrowedBook.email === user.email);
+        // console.log(userBorrowedBook.length);
+        // console.log(isAlreadyBorrowed);
         // if already exist or not 
         if (isAlreadyBorrowed) {
             Swal.fire({
@@ -40,6 +42,17 @@ const ViewDetails = () => {
                 text: 'You have already borrowed this book. ',
                 // text: ' Borrowing a book twice for a single user is not allowed',
                 icon: 'error',
+                confirmButtonText: 'OK'
+            });
+            toast.error("You can't borrow ");
+            return;
+        }
+        else if (userBorrowedBook.length >= 3 ) {
+            Swal.fire({
+                title: 'Sorry!',
+                text: 'You can borrow maximum three(3) books. ',
+                // icon: 'error',
+                icon: 'info',
                 confirmButtonText: 'OK'
             });
             toast.error("You can't borrow ");

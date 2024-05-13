@@ -418,5 +418,75 @@
         "description": "Satirical science fiction series follows the misadventures of an unwitting human, Arthur Dent, as he travels through space with his alien friend Ford Prefect.",
         "rating": 5,
         "contents": "Adams' witty humor and imaginative universe make 'The Hitchhiker's Guide to the Galaxy' a beloved classic among fans of the genre."
+    },
+    {
+        "image": "https://example.com/scifi-book1.jpg",
+        "name": "The Quantum Paradox",
+        "quantity": 2,
+        "author": "Alexandra Blake",
+        "category": "Sci-Fi",
+        "description": "In a future where quantum technology allows parallel universes to intersect, a brilliant physicist discovers a way to communicate with alternate versions of herself.",
+        "rating": 4,
+        "contents": "Chapter 1: The Experiment\nChapter 2: Parallel Worlds\n..."
+    },
+    {
+        "image": "https://i.postimg.cc/90BR2rTt/Stellar-Odyssey.jpg",
+        "name": "Stellar Odyssey",
+        "quantity": 2,
+        "author": "David Nova",
+        "category": "Sci-Fi",
+        "description": "A crew of astronauts embarks on a perilous journey to explore a distant star system, encountering alien civilizations and cosmic mysteries.",
+        "rating": 4,
+        "contents": "Prologue: Launch | Chapter 1: Into the Void ..."
+    },
+    {
+        "image": "https://example.com/the-name-of-the-wind.jpg",
+        "name": "The Name of the Wind",
+        "quantity": 12,
+        "author": "Patrick Rothfuss",
+        "category": "Fantasy",
+        "description": "The Name of the Wind is the first book in the Kingkiller Chronicle series, narrated by the enigmatic Kvothe, a gifted young man with a mysterious past.",
+        "rating": 5,
+        "contents": "The novel chronicles Kvothe's journey from a traveling performer to a legendary figure, as he recounts his adventures, encounters with magic, and quest for vengeance."
+    },
+    {
+        "image": "https://i.postimg.cc/MHy0rWBR/The-Hobbit.jpg",
+        "name": "The Hobbit",
+        "quantity": 18,
+        "author": "J.R.R. Tolkien",
+        "category": "Fantasy",
+        "description": "The Hobbit follows the story of Bilbo Baggins, a hobbit who is reluctantly swept into an epic quest by the wizard Gandalf and a group of dwarves.",
+        "rating": 4,
+        "contents": "Their mission is to reclaim the lost kingdom of Erebor and its treasure from the fearsome dragon Smaug. Along the way, Bilbo encounters trolls, elves, goblins, and other fantastical creatures."
+    },
+    {
+        "image": "https://i.postimg.cc/RZbtd3Yy/mistborn-trilogy.jpg",
+        "name": "Mistborn: The Final Empire",
+        "quantity": 15,
+        "author": "Brandon Sanderson",
+        "category": "Fantasy",
+        "description": "In a world where the dark lord has reigned for a thousand years, a young street thief named Vin discovers her extraordinary abilities as a Mistborn.",
+        "rating": 4,
+        "contents": "Joining a band of rebels led by the charismatic Kelsier, Vin learns to harness her powers in a daring plan to overthrow the tyrannical empire."
+    },
+    {
+        "image": "https://i.postimg.cc/fy5cKHHN/Harry-Potter-and-the-Sorcerer-s-Stone.jpg",
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "quantity": 25,
+        "author": "J.K. Rowling",
+        "category": "Fantasy",
+        "description": "The first book in the iconic Harry Potter series introduces readers to a young orphan named Harry Potter, who discovers on his eleventh birthday that he is a wizard destined for greatness.",
+        "rating": 5,
+        "contents": "Attending Hogwarts School of Witchcraft and Wizardry, Harry learns about the magical world, makes lifelong friends, and confronts the dark wizard who killed his parents."
+    },
+    {
+        "image": "https://i.postimg.cc/QdGxcwc2/The-Way-of-Kings.jpg",
+        "name": "The Way of Kings",
+        "quantity": 10,
+        "author": "Brandon Sanderson",
+        "category": "Fantasy",
+        "description": "The Way of Kings is the first book in the epic Stormlight Archive series, set in the world of Roshar.",
+        "rating": 2,
+        "contents": "The novel follows multiple characters, including a slave, a soldier, and a noblewoman, as they navigate a world on the brink of cataclysmic change."
     }
 ]
