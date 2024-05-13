@@ -29,7 +29,7 @@ const AddBook = () => {
 
         // send data to the server
 
-        // fetch('https://tourist-spot-server-rho.vercel.app/spot', {
+        // fetch(`http://localhost:5000/book?email=${user?.email}`, {
         fetch('http://localhost:5000/book', {
             method: 'POST',
             headers: {

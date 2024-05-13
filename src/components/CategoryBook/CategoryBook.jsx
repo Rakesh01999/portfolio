@@ -72,7 +72,6 @@ const CategoryBook = ({ book }) => {
                                 fullSymbol={<span className="full-star">★</span>}
                                 placeholderSymbol={<span className="placeholder-star">☆</span>}
                             />
-
                         </p>
 
                         <Link to={`/viewDetails/${book._id}`}>

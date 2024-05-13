@@ -29,7 +29,8 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 const loggedUsr = result.user;
-                console.log(loggedUsr)
+                console.log(loggedUsr);
+                const user = { email };
                 e.target.reset();
                 setUsr(loggedUsr);
                 // navigate('/');
@@ -42,17 +43,17 @@ const Login = () => {
 
                 // navigate after login
                 // toast.success('Successfully Logged in');
+                navigate(location?.state ? location.state : '/')
+                        
 
-
-                const user = { email };
                 // get access token
-                axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
-                    .then(res => {
-                        console.log(res.data)
-                        if (res.data.success) {
-                            navigate(location?.state ? location.state : '/')
-                        }
-                    })
+                // axios.post('http://localhost:5000/jwt', user, {withCredentials: true})
+                //     .then(res => {
+                //         console.log(res.data)
+                //         if (res.data.success) {
+                //             navigate(location?.state ? location.state : '/')
+                //         }
+                //     })
             })
             .catch(error => {
                 console.error(error);

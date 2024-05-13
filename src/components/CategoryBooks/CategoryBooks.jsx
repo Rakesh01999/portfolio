@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLoaderData } from 'react-router-dom';
 import CategoryBook from '../CategoryBook/CategoryBook';
+import { AuthContext } from '../../Providers/AuthProvider';
+import axios from 'axios';
 
 const CategoryBooks = () => {
 
+    const { user } = useContext(AuthContext);
 
     // ------ Category -------
     const category = useLoaderData();
@@ -12,14 +15,24 @@ const CategoryBooks = () => {
     // console.log(categoryName);
 
     // ------- Books ---------
+    const url = `http://localhost:5000/book?email=${user?.email}`;
+    // const url = `http://localhost:5000/book`;
+
     const [books, setBooks] = useState([]);
+
     useEffect(() => {
-        fetch('http://localhost:5000/book')
-            .then(res => res.json())
-            .then(data => setBooks(data));
-    }, [])
-    // console.log(books);
+        axios.get(url, { withCredentials: true })
+            .then(res => {
+                setBooks(res.data);
+            })
+        // fetch(url , {credentials: 'include'})
+        // .then(res => res.json())
+        // .then(data => setDisplayBooks(data))
+    }, [url])
+
+
     const selectedBooks = books.filter((book) => book.category === categoryName);
+    // console.log(books);
     // console.log(selectedBooks);
 
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { useLoaderData } from 'react-router-dom';
@@ -7,11 +7,15 @@ import BookCard from '../BookCard/BookCard';
 import BookTable from '../BookTable/BookTable';
 import axios from 'axios';
 import { data } from 'autoprefixer';
+import { AuthContext } from '../../Providers/AuthProvider';
 // import BookTable from '../BookTable/BookTable'; // Import the BookTable component
 
 const AllBook = () => {
+    const {user, email} = useContext(AuthContext);
     // const books = useLoaderData();
-    const url = 'http://localhost:5000/book';
+
+    // const url = 'http://localhost:5000/book';
+    const url = `http://localhost:5000/book?email=${user?.email}`;
 
     const [displayBooks, setDisplayBooks] = useState([]);
     const [viewMode, setViewMode] = useState('card'); // State to track the view mode (card or table)
@@ -23,7 +27,7 @@ const AllBook = () => {
             .then(res => {
                 setDisplayBooks(res.data);
             })
-        // fetch(url)
+        // fetch(url , {credentials: 'include'})
         // .then(res => res.json())
         // .then(data => setDisplayBooks(data))
     }, [url])
