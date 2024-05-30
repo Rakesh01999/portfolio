@@ -7,14 +7,17 @@ import { Helmet } from 'react-helmet-async';
 
 const MyList = () => {
     const { user } = useContext(AuthContext);
+    // console.log(user.email);
     const slBorrowedBook = useLoaderData();
+    // console.log(slBorrowedBook);
 
+    
     // Filter borrowedBook based on user email
     const userBorrowedBook = slBorrowedBook.filter((borrowedBook) => borrowedBook.email === user.email);
     const [borrowedBooks, setBorrowedBooks] = useState(userBorrowedBook);
 
 
-    // console.log(userBorrowedBook.length);
+    // console.log(userBorrowedBook);
 
     // ------- Books ---------
     const [book, setBook] = useState([]);

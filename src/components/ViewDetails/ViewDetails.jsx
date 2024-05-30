@@ -33,7 +33,7 @@ const ViewDetails = () => {
             borrowedBook.bookId === book._id && borrowedBook.email === user.email
         );
         const userBorrowedBook = borrowedBooks.filter((borrowedBook) => borrowedBook.email === user.email);
-        // console.log(userBorrowedBook.length);
+        console.log(userBorrowedBook.length);
         // console.log(isAlreadyBorrowed);
         // if already exist or not 
         if (isAlreadyBorrowed) {
@@ -48,6 +48,8 @@ const ViewDetails = () => {
             return;
         }
         else if (userBorrowedBook.length >= 3 ) {
+            
+        // console.log(userBorrowedBook.length);
             Swal.fire({
                 title: 'Sorry!',
                 text: 'You can borrow maximum three(3) books. ',
@@ -129,6 +131,7 @@ const ViewDetails = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                // console.log(newBorrowedBook);
                 if (data.insertedId) {
                     Swal.fire({
                         title: 'Success!',
@@ -137,8 +140,8 @@ const ViewDetails = () => {
                         confirmButtonText: 'OK'
                     })
                 }
+                location.reload();
             })
-        location.reload();
     }
 
     return (

@@ -67,21 +67,21 @@ const UpdateBook = () => {
                         <label className="label">
                             <span className="label-text">Book_Name</span>
                         </label>
-                        <input type="text" name="bookName" defaultValue={bookName} placeholder="Book_Name" className="input input-bordered w-full" />
+                        <input type="text" name="bookName" defaultValue={bookName} placeholder="Book_Name" required className="input input-bordered w-full" />
                     </div>
                     {/* Photo URL */}
                     <div className="form-control col-span-2 lg:col-span-4">
                         <label className="label">
                             <span className="label-text">Photo URL</span>
                         </label>
-                        <input type="text" name="photo" defaultValue={photo} placeholder="Photo URL" className="input input-bordered w-full" />
+                        <input type="text" name="photo" defaultValue={photo} placeholder="Photo URL" required className="input input-bordered w-full" />
                     </div>
                     {/* short description */}
                     <div className="form-control col-span-2 lg:col-span-4">
                         <label className="label">
                             <span className="label-text">Short_Description</span>
                         </label>
-                        <input type="text" name="shortDescription" defaultValue={shortDescription} placeholder="Short_Description" className="input input-bordered w-full" />
+                        <input type="text" name="shortDescription" defaultValue={shortDescription} required placeholder="Short_Description" className="input input-bordered w-full" />
                     </div>
 
                     {/* Author_Name */}
@@ -89,7 +89,7 @@ const UpdateBook = () => {
                         <label className="label">
                             <span className="label-text">Author_Name</span>
                         </label>
-                        <input type="text" name="authorName" defaultValue={authorName} placeholder="Author_Name" className="input input-bordered w-full" />
+                        <input type="text" name="authorName" defaultValue={authorName} required placeholder="Author_Name" className="input input-bordered w-full" />
                     </div>
 
                     {/* Quantity of the book */}
@@ -115,7 +115,7 @@ const UpdateBook = () => {
                         <label className="label">
                             <span className="label-text">Category</span>
                         </label>
-                        <select name="category" defaultValue={category} className="select select-bordered w-full">
+                        <select name="category" defaultValue={category} required className="select select-bordered w-full">
                             <option value="Novel">Novel</option>
                             <option value="Thriller">Thriller</option>
                             <option value="History">History</option>
@@ -131,7 +131,7 @@ const UpdateBook = () => {
                         <label className="label">
                             <span className="label-text">Rating</span>
                         </label>
-                        <input type="number" min="1" max="5" name="rating" defaultValue={rating} placeholder="Rating" className="input input-bordered w-full" />
+                        <input type="number" min="1" max="5" name="rating" defaultValue={rating} required placeholder="Rating" className="input input-bordered w-full" />
                     </div>
 
                     {/* contents */}
@@ -139,7 +139,7 @@ const UpdateBook = () => {
                         <label className="label">
                             <span className="label-text">Contents</span>
                         </label>
-                        <input type="text" name="contents" defaultValue={contents} placeholder="Contents" className="input input-bordered w-full" />
+                        <input type="text" name="contents" defaultValue={contents} required placeholder="Contents" className="input input-bordered w-full" />
                     </div>
 
                     {/* totalVisitorsPerYear */}

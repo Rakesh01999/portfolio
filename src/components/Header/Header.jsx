@@ -54,6 +54,7 @@ const Header = () => {
         <li><NavLink to="/addBook">Add Book </NavLink></li>
         <li><NavLink to="/allBook">All Books </NavLink></li>
         <li><NavLink to="/myList">Borrowed Books </NavLink></li>
+        <li><NavLink to="/bookReview">Book Review </NavLink></li>
         <li>
             {/* theme controller ---------- */}
             <div>

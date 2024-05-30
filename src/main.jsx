@@ -33,6 +33,7 @@ import UpdateBook from './components/UpdateBook/UpdateBook.jsx';
 import AddCategory from './components/AddCategory/AddCategory.jsx';
 import Categories from './components/Categories/Categories.jsx';
 import CategoryBooks from './components/CategoryBooks/CategoryBooks.jsx';
+import BookReview from './components/BookReview/BookReview.jsx';
 
 register();
 
@@ -128,8 +129,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/categoryBooks/:id',
-        element: <CategoryBooks></CategoryBooks>,
+        element: <PrivateRoute><CategoryBooks></CategoryBooks></PrivateRoute> ,
         loader: ({params}) => fetch(`https://library-server-blue.vercel.app/category/${params.id}`)
+      },
+      {
+        path: '/bookReview',
+        element: <BookReview></BookReview>,
+        // loader: ({params}) => fetch(`https://library-server-blue.vercel.app/category/${params.id}`)
       }
     ]
   },
