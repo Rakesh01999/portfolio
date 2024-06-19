@@ -1,5 +1,3 @@
-
-
 import { Link, useLoaderData } from "react-router-dom";
 import SpotCard from "../SpotCard/SpotCard";
 import { useState } from "react";

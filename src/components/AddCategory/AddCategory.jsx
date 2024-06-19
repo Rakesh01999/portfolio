@@ -46,6 +46,7 @@ const AddCategory = () => {
             <h2 className="text-2xl text-center text-lime-600 font-bold my-3">Add Category</h2>
             <div className="bg-[#F4F3F0] p-4 md:p-8 lg:p-24">
                 <h2 className="text-3xl font-extrabold mb-4">Add Category</h2>
+                
                 <form onSubmit={handleAddCategory} className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
 
                     {/* Photo URL */}

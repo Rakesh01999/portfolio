@@ -1,6 +1,6 @@
-# Book Buddy
+# Rakesh Biswas
 
-Welcome to Book Buddy !
+Welcome to My Portfolio !
 
 Live Site:https://library-management-f105d.web.app/
 
