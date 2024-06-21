@@ -87,7 +87,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/allBook',
-        element: <PrivateRoute><AllBook></AllBook></PrivateRoute> 
+        element: <PrivateRoute><AllBook></AllBook></PrivateRoute>
       },
       {
         path: '/addBook',
@@ -96,7 +96,7 @@ const router = createBrowserRouter([
       {
         path: '/updateBook/:id',
         element: <PrivateRoute><UpdateBook></UpdateBook></PrivateRoute>,
-        loader: ({params}) => fetch(`https://library-server-blue.vercel.app/book/${params.id}`)
+        loader: ({ params }) => fetch(`https://library-server-blue.vercel.app/book/${params.id}`)
       },
       {
         path: '/myList',
@@ -105,8 +105,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/viewDetails/:id',
-        element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
-        loader: ({params}) => fetch(`https://library-server-blue.vercel.app/book/${params.id}`)
+        element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
+        loader: ({ params }) => fetch(`https://library-server-blue.vercel.app/book/${params.id}`)
       },
       {
         path: '/countries',
@@ -125,12 +125,12 @@ const router = createBrowserRouter([
       {
         path: '/countrySpots/:id',
         element: <CountrySpots></CountrySpots>,
-        loader: ({params}) => fetch(`https://tourist-spot-server-rho.vercel.app/country/${params.id}`)
+        loader: ({ params }) => fetch(`https://tourist-spot-server-rho.vercel.app/country/${params.id}`)
       },
       {
         path: '/categoryBooks/:id',
-        element: <PrivateRoute><CategoryBooks></CategoryBooks></PrivateRoute> ,
-        loader: ({params}) => fetch(`https://library-server-blue.vercel.app/category/${params.id}`)
+        element: <PrivateRoute><CategoryBooks></CategoryBooks></PrivateRoute>,
+        loader: ({ params }) => fetch(`https://library-server-blue.vercel.app/category/${params.id}`)
       },
       {
         path: '/bookReview',
@@ -145,7 +145,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
       <AuthProvider>
-        <RouterProvider router={router} />
+        {/* <div className='max-w-screen-xl mx-auto'> */}
+        {/* <div className='mx-auto'> */}
+        <div>
+          <RouterProvider router={router} />
+        </div>
       </AuthProvider>
     </HelmetProvider>
   </React.StrictMode>,

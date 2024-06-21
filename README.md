@@ -12,7 +12,8 @@ Live Site:https://library-management-f105d.web.app/
 - **Social Media Integration:** Allow users to connect with the Book Buddy and experiences on social media platforms, and integrate social media feeds to showcase user-generated content through social links of Book Buddy website .
 - **Secure Authentication:** User's data is protected with secure authentication methods to ensure privacy and security.
 
-## Selected Category (  Assignment_ID: assignment_category_0008 )
+
+## Selected Category (  )
 # Library Management System
 
 
@@ -29,4 +30,3 @@ To run the project locally, follow these steps:
 2. Navigate to the project directory.
 3. Install dependencies using `npm install`.
 4. Start the development server using `npm start`.
-
