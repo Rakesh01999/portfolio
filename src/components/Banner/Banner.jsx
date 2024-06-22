@@ -2,14 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import banner5 from '../../../public/images/bnp5.png'
 
-import Slider from '../Slider/Slider';
 import { FaAnglesRight } from "react-icons/fa6";
 import 'animate.css';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaArrowRightLong } from "react-icons/fa6";
 import photo from '../../assets/rk.png'
 import { Element } from 'react-scroll';
-import bannerImage from '../../assets/banner.jpeg'
+import bannerImage from '../../assets/banner.png'
 
 const Banner = () => {
 
@@ -26,8 +25,7 @@ const Banner = () => {
             </div>
 
             {/* <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/5077FVWM/rafael-m-CTNHIGI2-Wc-U-unsplash.jpg)' }}> */}
-            {/* <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: `url(${bannerImage})` }}> */}
-            <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: `url($})` }}>
+            <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: `url(${bannerImage})` }}>
 
                 <div className='hero-overlay bg-opacity-70 rounded-3xl flex flex-col md:flex-row items-center lg:p-32 md:px-8 px-4 py-8 md:py-2'>
                     <div className='rounded-3xl w-full md:w-[70%]'>

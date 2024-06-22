@@ -1,8 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../Banner/Banner";
-import Services from "../Services/Services";
-import Feedback from "../Feedback/Feedback";
-import Categories from "../Categories/Categories";
 import { Element } from "react-scroll";
 import Contact from "../Contact/Contact";
 import Skills from "../Skills/Skills";
@@ -27,9 +24,7 @@ const Home = () => {
             <Element name="education">
                 <Education></Education>
             </Element>
-            {/* <Categories></Categories> */}
-            {/* <Services></Services> */}
-            {/* <Feedback></Feedback> */}
+            
         </div>
     );
 };
