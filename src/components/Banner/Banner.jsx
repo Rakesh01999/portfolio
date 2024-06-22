@@ -9,6 +9,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { FaArrowRightLong } from "react-icons/fa6";
 import photo from '../../assets/rk.png'
 import { Element } from 'react-scroll';
+import bannerImage from '../../assets/banner.jpeg'
 
 const Banner = () => {
 
@@ -24,8 +25,9 @@ const Banner = () => {
                 </div>
             </div>
 
-            {/* <div className='hero max-w-[370px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/5077FVWM/rafael-m-CTNHIGI2-Wc-U-unsplash.jpg)' }}> */}
-            <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/5077FVWM/rafael-m-CTNHIGI2-Wc-U-unsplash.jpg)' }}>
+            {/* <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: 'url(https://i.postimg.cc/5077FVWM/rafael-m-CTNHIGI2-Wc-U-unsplash.jpg)' }}> */}
+            {/* <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: `url(${bannerImage})` }}> */}
+            <div className='hero max-w-[490px]  md:max-w-[540px] lg:max-w-[1540px] mx-auto  rounded-3xl mb-10 bg-no-repeat' style={{ backgroundImage: `url($})` }}>
 
                 <div className='hero-overlay bg-opacity-70 rounded-3xl flex flex-col md:flex-row items-center lg:p-32 md:px-8 px-4 py-8 md:py-2'>
                     <div className='rounded-3xl w-full md:w-[70%]'>
@@ -82,35 +84,17 @@ const Banner = () => {
 
 
             {/* Slider Section */}
-            <div className='max-w-[370px] md:max-w-[540px] lg:max-w-[1540px] mx-auto px-4 md:px-8 py-8 md:py-10  rounded-3xl mb-10'>
+            {/* <div className='max-w-[370px] md:max-w-[540px] lg:max-w-[1540px] mx-auto px-4 md:px-8 py-8 md:py-10  rounded-3xl mb-10'>
                 <div className='d:text-3xl md:font-bold text-center text-blue-600 mb-4 flex flex-row items-center justify-center gap-2'>
                     <h3 className='text-center'></h3>
                     <div>
-                        {/* <FaAnglesRight /> */}
                         Slider
                     </div>
                 </div>
                 <Slider />
-            </div>
+            </div> */}
 
 
-            {/* About Me Section */}
-            <Element name="aboutMe">
-                {/* <p>Hello</p> */}
-                <div className='max-w-[370px] md:max-w-[540px] lg:max-w-[1540px] mx-auto px-4 md:px-8 py-8 md:py-10  rounded-3xl mb-10'>
-                    <h3 className='text-center mb-5 font-bold text-xl'>
-                        About Me
-                    </h3>
-                    <div className='text-center'>
-                        <p>
-                            Passionate about coding, problem-solving, and creating innovative web solutions.
-                        </p>
-                        <p>
-                            I value teamwork, collaboration, and continuous learning. Excited to work on impactful projects, learn from experts, and contribute to technological advancements. Let's collaborate and bring ideas to life through technology!
-                        </p>
-                    </div>
-                </div>
-            </Element>
 
 
 

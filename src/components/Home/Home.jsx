@@ -4,6 +4,11 @@ import Services from "../Services/Services";
 import Feedback from "../Feedback/Feedback";
 import Categories from "../Categories/Categories";
 import { Element } from "react-scroll";
+import Contact from "../Contact/Contact";
+import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
+import Education from "../Education/Education";
+import AboutMe from "../AboutMe/AboutMe";
 
 const Home = () => {
     return (
@@ -13,11 +18,17 @@ const Home = () => {
                 <title>Rakesh Biswas | Portfolio</title>
             </Helmet>
             <Banner></Banner>
-            <Element name="education">
-            <Categories></Categories>
-
+            <AboutMe></AboutMe>
+            <Contact></Contact>
+            <Element name="skills">
+                <Skills></Skills>
             </Element>
-            <Services></Services>
+            <Projects></Projects>
+            <Element name="education">
+                <Education></Education>
+            </Element>
+            {/* <Categories></Categories> */}
+            {/* <Services></Services> */}
             {/* <Feedback></Feedback> */}
         </div>
     );
