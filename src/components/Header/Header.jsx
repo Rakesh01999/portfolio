@@ -4,11 +4,9 @@ import './Header.css';
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Tooltip } from 'react-tooltip'
-// import ReactTooltip from 'react-tooltip'
-// import logo from '../../assets/book1.png'
-import logo from '../../assets/book1.png'
 import { ToastContainer, toast } from "react-toastify";
 import { Link } from "react-scroll";
+import { FaDownload } from "react-icons/fa";
 
 const Header = () => {
 
@@ -38,12 +36,13 @@ const Header = () => {
     // console.log(theme);
 
     const links = <>
-        {/* <li><NavLink to="/">Home</NavLink></li> */}
-        <li><Link to="aboutMe" smooth={true} duration={500}>About Me </Link></li>
-        <li><Link to="contact" smooth={true} duration={500}>Contact </Link></li>
-        <li><Link to="skills" smooth={true} duration={500}>Skills </Link></li>
-        <li><Link to="projects" smooth={true} duration={500}>Projects </Link></li>
-        <li><Link to="education" smooth={true} duration={500}>Education </Link></li>
+
+        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="aboutMe" smooth={true} duration={500} offset={-112}>About Me</Link></li>
+        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="contact" smooth={true} duration={500} offset={-130}>Contact</Link></li>
+        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="skills" smooth={true} duration={500} offset={-120}>Skills</Link></li>
+        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="projects" smooth={true} duration={500} offset={-130}>Projects</Link></li>
+        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="education" smooth={true} duration={500} offset={-130}>Education</Link></li>
+
 
         {/* theme controller ---------- */}
         <div className="flex items-center">
@@ -60,64 +59,72 @@ const Header = () => {
     </>
 
     return (
-        // <div className="navbar bg-base-100 w-[px] md:w-full h-28">
-        <div className="navbar fixed z-10 bg-opacity-25 bg-black text-white w-[px] md:w-full h-28">
-            {/* // <div className="navbar fixed bg-transparent bg-blue-600  opacity-80 w-[px] md:w-full h-28"> */}
-            {/* <div className="navbar fixed z-10 bg-opacity-25 max-w-screen-xl bg-black text-white"> */}
+
+        //  --- updated ---
+        // <div className="navbar fixed z-10 bg-opacity-35 bg-black text-white w-[px] md:w-full h-28">
+        <div className="navbar fixed z-10 bg-cyan-400 text-black w-[px] md:w-full h-28">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    {/* <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"> */}
-                    <ul tabIndex={0} className="menu menu-sm bg-opacity-25 bg-black dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
-                        {links}
+                    <ul
+                        tabIndex={0}
+                        // className="menu menu-sm dropdown-content bg-black rounded-box  z-[1] mt-3 w-52 p-2 shadow ">
+                        className="menu menu-sm dropdown-content bg-cyan-300 rounded-box  z-[1] mt-3 w-52 p-2 shadow ">
+                        {
+                            links
+                        }
                     </ul>
                 </div>
-
-
-
-
+                <a className="btn btn-ghost text-xl"></a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 lg:flex">
                     {links}
                 </ul>
             </div>
 
-
-
-            {/* <div className="md:navbar-end">
-                {
-                    user ? <>
-                        <div>
-                            <p className="text-blue-500 font-bold">{user.displayName}</p>
-                            <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
-                                <img className="w-[40px] h-[40px]  md:w-[60px] md:h-[60px] border-2 border-blue-600  rounded-full mr-1" src={user.photoURL} alt="" />
-
-                            </div>
-
-                        </div>
-                        <a onClick={handleLogOut} className="btn btn-info btn-sm text-white  md:w-[116px] md:h-[57px] md:text-[20px]">Log out</a>
-                    </>
-                        :
-                        <div className="flex md:flex-row gap-2">
-
-                            <Link to="/login">
-                                <div className="flex items-center md:gap-2">
-                                    <span className="btn btn-info btn-sm text-white md:w-[116px] md:h-[57px] md:text-[20px]">Log in</span>
-                                </div>
-                            </Link>
-                            <Link to="/register">
-                                <div className="flex items-center md:gap-2">
-                                    <span className="btn btn-sm bg-green-300 text-blue-700  md:w-[116px] md:h-[57px] md:text-[20px]">Register</span>
-                                </div>
-                            </Link>
-                        </div>
-                }
+            {/* <div className="navbar-end">
+                <a className="btn btn-accent hover:bg-blue-700 hover:text-white hover:shadow-cyan-400 md:text-xl mr-3" href="https://drive.google.com/file/d/1_GfY8GSMbZKoy6O8cxrocabRP2_18zrw/view?usp=sharing">
+                    Resume
+                    <FaDownload />
+                </a>
             </div> */}
-            <ToastContainer></ToastContainer>
+
+            <div className="navbar-end">
+                <a
+    //                 className="
+    //   btn btn-accent md:text-xl mr-3
+    //   hover:bg-blue-700 hover:text-white
+    //   shadow-lg shadow-cyan-500
+    //   animate-pulse
+    // "
+                    className="
+      btn btn-accent md:text-xl mr-3
+      hover:bg-blue-700 hover:text-white
+      shadow-lg shadow-black
+      animate-pulse
+    "
+                    href="https://drive.google.com/file/d/1_GfY8GSMbZKoy6O8cxrocabRP2_18zrw/view?usp=sharing"
+                >
+                    Resume
+                    <FaDownload />
+                </a>
+            </div>
         </div>
+
     );
 };
 

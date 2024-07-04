@@ -10,13 +10,13 @@ const Footer = () => {
                     <nav className="flex flex-col items-center gap-4">
                         <a className="text-xl md:text-2xl text-cyan-300 text-center">Get in Touch</a>
                         <div className="flex flex-col items-center gap-4">
-                            <a href="https://github.com/Rakesh01999" target="_blank" rel="noopener noreferrer" className="link link-hover flex items-center">
+                            <a href="https://github.com/Rakesh01999" target="_blank" rel="noopener noreferrer" className="link link-hover md:text-xl text-white flex items-center">
                                 <FaGithub className="mr-2" /> GitHub
                             </a>
-                            <a href="mailto:rbiswas01999@gmail.com" className="link link-hover flex items-center">
+                            <a href="mailto:rbiswas01999@gmail.com" className="link link-hover md:text-xl text-white flex items-center">
                                 <FaEnvelope className="mr-2" /> Gmail
                             </a>
-                            <a href="https://www.facebook.com/rakeshbiswas.biswas.9843/" target="_blank" rel="noopener noreferrer" className="link link-hover flex items-center">
+                            <a href="https://www.facebook.com/rakeshbiswas.biswas.9843/" target="_blank" rel="noopener noreferrer" className="link link-hover md:text-xl text-white flex items-center">
                                 <FaFacebook className="mr-2" /> Facebook
                             </a>
                         </div>

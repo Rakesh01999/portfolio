@@ -16,7 +16,7 @@ const Home = () => {
             </Helmet>
             <Banner></Banner>
             <AboutMe></AboutMe>
-            <Contact></Contact>
+
             <Element name="skills">
                 <Skills></Skills>
             </Element>
@@ -24,7 +24,7 @@ const Home = () => {
             <Element name="education">
                 <Education></Education>
             </Element>
-            
+            <Contact></Contact>            
         </div>
     );
 };

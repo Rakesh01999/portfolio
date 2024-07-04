@@ -70,8 +70,8 @@ const Banner = () => {
                                     </div>
                                 </button>
                             </Link> */}
-                            <div className='w-44 h-48 lg:w-52 border border-cyan-400 rounded-full'>
-                                <img className='w-60 h-48 rounded-full' src={photo} alt="Profile Photo" />
+                            <div className='w-44 h-48 lg:w-56 lg:h-60 border border-cyan-400 rounded-full'>
+                                <img className='w-60 h-48 lg:h-60 rounded-full' src={photo} alt="Profile Photo" />
                             </div>
                         </h1>
                     </div>
