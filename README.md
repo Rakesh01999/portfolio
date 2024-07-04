@@ -2,7 +2,7 @@
 
 Welcome to My Portfolio !
 
-Live Site:https://rakesh-biswas-portfolio.netlify.app/
+Portfolio:[Click Here](https://rakesh-biswas-portfolio.netlify.app/)
 
 
 
@@ -13,9 +13,3 @@ Live Site:https://rakesh-biswas-portfolio.netlify.app/
 - **animate.css**: A library of ready-to-use CSS animations for adding visual effects to elements.
 
 
-## Getting Started
-To run the project locally, follow these steps:
-1. Clone this repository to your local machine.
-2. Navigate to the project directory.
-3. Install dependencies using `npm install`.
-4. Start the development server using `npm start`.
