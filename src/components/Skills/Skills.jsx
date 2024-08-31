@@ -8,7 +8,7 @@ const Skills = () => {
     // console.log(theme);
     return (
         <div className="section skills-section mx-4 md:mx-10 lg:mx-14 mb-20" id="skills">
-            <h2 className="hover:text-blue-600 text-xl text-center md:text-[40px] text-cyan-400 font-bold mb-10"> Skills  </h2>
+            <h2 className="hover:text-cyan-400 text-xl text-center md:text-[40px] text-blue-500 font-bold mb-10"> Skills  </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <Slide>
@@ -19,7 +19,6 @@ const Skills = () => {
                         <ul className="list-disc list-inside">
                             <li>C</li>
                             <li>C++</li>
-                            <li>Python</li>
                             <li>JavaScript</li>
                         </ul>
                     </div>
@@ -59,7 +58,6 @@ const Skills = () => {
                         <ul className="list-disc list-inside">
                             <li>MongoDB</li>
                             <li>Firebase</li>
-                            <li>SQL</li>
                         </ul>
                     </div>
                 </Slide>

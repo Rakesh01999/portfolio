@@ -6,7 +6,7 @@ import { FaAnglesRight } from "react-icons/fa6";
 import 'animate.css';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaArrowRightLong } from "react-icons/fa6";
-import photo from '../../assets/rk.png'
+import photo from '../../assets/rk.jpg'
 import { Element } from 'react-scroll';
 import bannerImage from '../../assets/banner.png'
 
@@ -34,7 +34,7 @@ const Banner = () => {
                         <div className=''>
                             <h1 class="animate__animated animate__fadeInLeft">
                                 <span className='text-[40px] md:text-4xl lg:text-6xl font-bold text-white'>
-                                    Hi ! I am Rakesh Biswas
+                                    Hi ! I am <span className='text-blue-300 hover:text-cyan-300'>Rakesh Biswas</span>
                                 </span>
                             </h1>
                             <p className='text-[20px] md:text-2xl lg:text-4xl  text-white'>
@@ -61,20 +61,29 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    <div className=' md:rounded-full mt-4 md:w-[30%] md:ml-[50px] lg:ml-32'>
+                    <div className=' md:rounded-full my-4 mr-6 md:w-[30%] md:ml-[50px] lg:ml-32'>
                         <h1 class="animate__animated animate__zoomIn">
-                            {/* <Link to="/allBook">
-                                <button className='btn btn-outline btn-accent md:btn-lg '>
-                                    <div className='flex gap-2 items-center'>
-                                        <p>Explore</p> <FaArrowRightLong />
-                                    </div>
-                                </button>
-                            </Link> */}
                             <div className='w-44 h-48 lg:w-56 lg:h-60 border border-cyan-400 rounded-full'>
-                                <img className='w-60 h-48 lg:h-60 rounded-full' src={photo} alt="Profile Photo" />
+                                <img className='w-60 h-48 lg:w-full lg:h-full rounded-full' src={photo} alt="Profile Photo" />
                             </div>
                         </h1>
                     </div>
+
+                    {/* <div className='md:rounded-full my-4 mr-6 md:w-[30%] md:ml-[50px] lg:ml-32'>
+                        <h1 className="animate__animated animate__zoomIn">
+                            <div
+                                className='w-44 h-48 lg:w-56 lg:h-60 border border-cyan-400'
+                                style={{ clipPath: 'polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%)' }}>
+                                <img
+                                    className='w-60 h-48 lg:w-full lg:h-full'
+                                    src={photo}
+                                    alt="Profile Photo"
+                                    style={{ clipPath: 'inherit' }}
+                                />
+                            </div>
+                        </h1>
+                    </div> */}
+
                 </div>
 
 

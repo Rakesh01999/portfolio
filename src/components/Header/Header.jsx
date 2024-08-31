@@ -37,11 +37,11 @@ const Header = () => {
 
     const links = <>
 
-        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="aboutMe" smooth={true} duration={500} offset={-112}>About Me</Link></li>
-        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="contact" smooth={true} duration={500} offset={-130}>Contact</Link></li>
-        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="skills" smooth={true} duration={500} offset={-120}>Skills</Link></li>
-        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="projects" smooth={true} duration={500} offset={-130}>Projects</Link></li>
-        <li><Link className="md:text-lg hover:text-white hover:font-bold hover:bg-blue-500" to="education" smooth={true} duration={500} offset={-130}>Education</Link></li>
+        <li><Link className="md:text-lg hover:text-black hover:font-bold hover:bg-cyan-400 text-white font-bold" to="aboutMe" smooth={true} duration={500} offset={-112}>About Me</Link></li>
+        <li><Link className="md:text-lg hover:text-black hover:font-bold hover:bg-cyan-400 text-white font-bold" to="skills" smooth={true} duration={500} offset={-120}>Skills</Link></li>
+        <li><Link className="md:text-lg hover:text-black hover:font-bold hover:bg-cyan-400 text-white font-bold" to="projects" smooth={true} duration={500} offset={-130}>Projects</Link></li>
+        <li><Link className="md:text-lg hover:text-black hover:font-bold hover:bg-cyan-400 text-white font-bold" to="education" smooth={true} duration={500} offset={-130}>Education</Link></li>
+        <li><Link className="md:text-lg hover:text-black hover:font-bold hover:bg-cyan-400 text-white font-bold" to="contact" smooth={true} duration={500} offset={-130}>Contact</Link></li>
 
 
         {/* theme controller ---------- */}
@@ -62,7 +62,9 @@ const Header = () => {
 
         //  --- updated ---
         // <div className="navbar fixed z-10 bg-opacity-35 bg-black text-white w-[px] md:w-full h-28">
-        <div className="navbar fixed z-10 bg-cyan-400 text-black w-[px] md:w-full h-28">
+
+        // <div className="navbar fixed z-10 bg-cyan-400 text-black w-[px] md:w-full h-28">
+        <div className="navbar fixed z-10 bg-blue-500 text-black w-[px] md:w-full h-28">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -82,7 +84,7 @@ const Header = () => {
                     <ul
                         tabIndex={0}
                         // className="menu menu-sm dropdown-content bg-black rounded-box  z-[1] mt-3 w-52 p-2 shadow ">
-                        className="menu menu-sm dropdown-content bg-cyan-300 rounded-box  z-[1] mt-3 w-52 p-2 shadow ">
+                        className="menu menu-sm dropdown-content bg-blue-600 rounded-box  z-[1] mt-3 w-52 p-2 shadow ">
                         {
                             links
                         }
@@ -105,19 +107,13 @@ const Header = () => {
 
             <div className="navbar-end">
                 <a
-    //                 className="
-    //   btn btn-accent md:text-xl mr-3
-    //   hover:bg-blue-700 hover:text-white
-    //   shadow-lg shadow-cyan-500
-    //   animate-pulse
-    // "
                     className="
-      btn btn-accent md:text-xl mr-3
-      hover:bg-blue-700 hover:text-white
-      shadow-lg shadow-black
+      btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
       animate-pulse
     "
-                    href="https://drive.google.com/file/d/1_GfY8GSMbZKoy6O8cxrocabRP2_18zrw/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1zao0m8IOgjcMo0fENxpWzZ0UIySmZ_3M/view?usp=sharing"
                 >
                     Resume
                     <FaDownload />
