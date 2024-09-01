@@ -9,7 +9,7 @@ const Education = () => {
             <div className="flex justify-center flex-wrap gap-8">
                 <JackInTheBox>
 
-                <div className="education-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 max-w-sm">
+                <div className="education-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 max-w-sm h-full">
                     <FaUniversity className="text-3xl mb-4" />
                     <h4 className="text-xl font-bold mb-2">Jashore University of Science and Technology</h4>
                     <p className="mb-2"><strong>Degree:</strong> Bachelor of Science in Computer Science and Engineering</p>
@@ -20,7 +20,7 @@ const Education = () => {
 
                 <JackInTheBox>
 
-                <div className="education-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 max-w-sm">
+                <div className="education-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 max-w-sm h-full">
                     <FaSchool className="text-3xl mb-4" />
                     <h4 className="text-xl font-bold mb-2">Government Brajalal College, Khulna</h4>
                     <p className="mb-2"><strong>Group:</strong> Science</p>
