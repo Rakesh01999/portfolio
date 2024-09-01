@@ -15,8 +15,8 @@ const Projects = () => {
                 <Zoom>
                     <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
                         <h4 className="text-xl font-bold mb-2">Matrimony Website (Full Stack)</h4>
-                        <p className="mb-2"><strong>Live-link:</strong> <a href="https://matrimony-mate.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Matrimony Mate</a></p>
-                        <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/matrimony-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
+                        {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://matrimony-mate.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Matrimony Mate</a></p> */}
+                        {/* <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/matrimony-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p> */}
                         <p className="mb-2"><strong>Server-side:</strong> <a href="https://github.com/Rakesh01999/matrimony-server" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
                         <p className="mb-2"><strong>Features:</strong></p>
                         <ul className="list-disc list-inside mb-2">
@@ -32,7 +32,7 @@ const Projects = () => {
       hover:bg-cyan-400 text-white hover:text-black 
       shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
       ">
-                                <FaExternalLinkAlt className="text-2xl" />
+                                Live Link<FaExternalLinkAlt className="text-2xl" />
                             </a>
                             <a href="https://github.com/Rakesh01999/matrimony-client" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
       hover:bg-cyan-400 text-white hover:text-black 
@@ -47,8 +47,8 @@ const Projects = () => {
                 <Zoom>
                     <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
                         <h4 className="text-xl font-bold mb-2">Library Management System (Full Stack)</h4>
-                        <p className="mb-2"><strong>Live-link:</strong> <a href="https://library-management-f105d.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Book Buddy</a></p>
-                        <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/library-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
+                        {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://library-management-f105d.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Book Buddy</a></p> */}
+                        {/* <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/library-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p> */}
                         <p className="mb-2"><strong>Server-side:</strong> <a href="https://github.com/Rakesh01999/library-server" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
                         <p className="mb-2"><strong>Features:</strong></p>
                         <ul className="list-disc list-inside mb-2">
@@ -64,7 +64,7 @@ const Projects = () => {
       hover:bg-cyan-400 text-white hover:text-black 
       shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
       ">
-                                <FaExternalLinkAlt className="text-2xl" />
+                                Live Link<FaExternalLinkAlt className="text-2xl" />
                             </a>
                             <a href="https://github.com/Rakesh01999/library-client" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
       hover:bg-cyan-400 text-white hover:text-black 
@@ -79,8 +79,8 @@ const Projects = () => {
                 <Zoom>
                     <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
                         <h4 className="text-xl font-bold mb-2">Tourism Spot Management (Full Stack)</h4>
-                        <p className="mb-2"><strong>Live-link:</strong> <a href="https://real-estate-d06a5.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Tourizzo</a></p>
-                        <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/tourist-spot-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
+                        {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://real-estate-d06a5.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Tourizzo</a></p> */}
+                        {/* <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/tourist-spot-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p> */}
                         <p className="mb-2"><strong>Server-side:</strong> <a href="https://github.com/Rakesh01999/tourist-spot-server" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
                         <p className="mb-2"><strong>Features:</strong></p>
                         <ul className="list-disc list-inside mb-2">
@@ -96,7 +96,7 @@ const Projects = () => {
       hover:bg-cyan-400 text-white hover:text-black 
       shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
       ">
-                                <FaExternalLinkAlt className="text-2xl" />
+                                Live Link<FaExternalLinkAlt className="text-2xl" />
                             </a>
                             <a href="https://github.com/Rakesh01999/tourist-spot-client" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
       hover:bg-cyan-400 text-white hover:text-black 
@@ -126,7 +126,7 @@ const Projects = () => {
       hover:bg-cyan-400 text-white hover:text-black 
       shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
       ">
-                                <FaExternalLinkAlt className="text-2xl" />
+                                Live Link<FaExternalLinkAlt className="text-2xl" />
                             </a>
                             <a href="https://github.com/programming-hero-web-course1/b9a7-chefs-table-Rakesh01999" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
       hover:bg-cyan-400 text-white hover:text-black 
