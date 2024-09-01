@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fade, Zoom } from 'react-awesome-reveal';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
@@ -27,10 +28,16 @@ const Projects = () => {
                         <p><span className='font-semibold'>Front-end:</span> React.js, Material UI, HTML, CSS, JavaScript, Axios, Tailwind CSS, Firebase</p>
                         <p><span className='font-semibold'>Back-end:</span> Node.js, Express.js, MongoDB, JWT</p>
                         <div className="text-center flex justify-center space-x-4 mt-4">
-                            <a href="https://matrimony-mate.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://matrimony-mate.web.app/" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaExternalLinkAlt className="text-2xl" />
                             </a>
-                            <a href="https://github.com/Rakesh01999/matrimony-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://github.com/Rakesh01999/matrimony-client" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaGithub className="text-2xl" />
                             </a>
                         </div>
@@ -53,10 +60,16 @@ const Projects = () => {
                         <p><span className='font-semibold'>Front-end:</span> React.js, HTML, CSS, JavaScript, Axios, Tailwind CSS, Firebase</p>
                         <p><span className='font-semibold'>Back-end:</span> Node.js, Express.js, MongoDB, JWT</p>
                         <div className="text-center flex justify-center space-x-4 mt-4">
-                            <a href="https://library-management-f105d.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://library-management-f105d.web.app/" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaExternalLinkAlt className="text-2xl" />
                             </a>
-                            <a href="https://github.com/Rakesh01999/library-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://github.com/Rakesh01999/library-client" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaGithub className="text-2xl" />
                             </a>
                         </div>
@@ -79,10 +92,16 @@ const Projects = () => {
                         <p><span className='font-semibold'>Front-end:</span> React.js, HTML, CSS, JavaScript, Tailwind CSS, Firebase</p>
                         <p><span className='font-semibold'>Back-end:</span> Node.js, Express.js, MongoDB</p>
                         <div className="text-center flex justify-center space-x-4 mt-4">
-                            <a href="https://real-estate-d06a5.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://real-estate-d06a5.web.app/" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaExternalLinkAlt className="text-2xl" />
                             </a>
-                            <a href="https://github.com/Rakesh01999/tourist-spot-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://github.com/Rakesh01999/tourist-spot-client" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaGithub className="text-2xl" />
                             </a>
                         </div>
@@ -92,7 +111,7 @@ const Projects = () => {
                 <Zoom>
                     <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
                         <h4 className="text-xl font-bold mb-2">Restaurant Management (React)</h4>
-                        <p className="mb-2"><strong>Live-link:</strong> <a href="https://react-spa-assignment-7.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Recipe Calories</a></p>
+                        {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://react-spa-assignment-7.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Recipe Calories</a></p> */}
                         <p className="mb-2"><strong>GitHub:</strong> <a href="https://github.com/programming-hero-web-course1/b9a7-chefs-table-Rakesh01999" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
                         <p className="mb-2"><strong>Features:</strong></p>
                         <ul className="list-disc list-inside mb-2">
@@ -103,10 +122,16 @@ const Projects = () => {
                         <p className="mb-2"><strong>Technology:</strong></p>
                         <p><span className='font-semibold'>Front-end:</span> React.js, HTML, CSS, JavaScript, Tailwind CSS</p>
                         <div className="text-center flex justify-center space-x-4 mt-4">
-                            <a href="https://react-spa-assignment-7.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://react-spa-assignment-7.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaExternalLinkAlt className="text-2xl" />
                             </a>
-                            <a href="https://github.com/programming-hero-web-course1/b9a7-chefs-table-Rakesh01999" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                            <a href="https://github.com/programming-hero-web-course1/b9a7-chefs-table-Rakesh01999" target="_blank" rel="noopener noreferrer" className="btn btn-info bg-blue-500 border-white md:text-xl mr-3
+      hover:bg-cyan-400 text-white hover:text-black 
+      shadow-lg shadow-black hover:shadow-cyan-300 hover:font-bold
+      ">
                                 <FaGithub className="text-2xl" />
                             </a>
                         </div>
