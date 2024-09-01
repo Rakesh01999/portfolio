@@ -13,7 +13,7 @@ const Projects = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <Zoom>
-                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
+                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 h-full">
                         <h4 className="text-xl font-bold mb-2">Matrimony Website (Full Stack)</h4>
                         {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://matrimony-mate.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Matrimony Mate</a></p> */}
                         {/* <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/matrimony-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p> */}
@@ -45,7 +45,7 @@ const Projects = () => {
                 </Zoom>
 
                 <Zoom>
-                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
+                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 h-full">
                         <h4 className="text-xl font-bold mb-2">Library Management System (Full Stack)</h4>
                         {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://library-management-f105d.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Book Buddy</a></p> */}
                         {/* <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/library-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p> */}
@@ -77,7 +77,7 @@ const Projects = () => {
                 </Zoom>
 
                 <Zoom>
-                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
+                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 h-full">
                         <h4 className="text-xl font-bold mb-2">Tourism Spot Management (Full Stack)</h4>
                         {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://real-estate-d06a5.web.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Tourizzo</a></p> */}
                         {/* <p className="mb-2"><strong>Client-side:</strong> <a href="https://github.com/Rakesh01999/tourist-spot-client" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p> */}
@@ -109,7 +109,7 @@ const Projects = () => {
                 </Zoom>
 
                 <Zoom>
-                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300">
+                    <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 h-full">
                         <h4 className="text-xl font-bold mb-2">Restaurant Management (React)</h4>
                         {/* <p className="mb-2"><strong>Live-link:</strong> <a href="https://react-spa-assignment-7.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Recipe Calories</a></p> */}
                         <p className="mb-2"><strong>GitHub:</strong> <a href="https://github.com/programming-hero-web-course1/b9a7-chefs-table-Rakesh01999" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub Repo</a></p>
